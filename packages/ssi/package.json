@@ -1,0 +1,29 @@
+{
+  "name": "@adeya/ssi",
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "main": "build/index",
+  "source": "src/index",
+  "homepage": "https://github.com/hyperledger/anoncreds-rs/tree/main/wrappers/javascript/anoncreds-shared",
+  "repository": {
+    "url": "https://github.com/hyperledger/anoncreds-rs",
+    "type": "git",
+    "directory": "packages/ssi"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "check-types": "pnpm compile --noEmit",
+    "build": "pnpm clean && pnpm compile",
+    "clean": "rimraf -rf ./build",
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "rimraf": "3.0.2",
+    "typescript": "~5.2.2"
+  }
+}
