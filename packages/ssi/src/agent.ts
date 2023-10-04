@@ -43,7 +43,10 @@ import { anoncreds } from '@hyperledger/anoncreds-react-native'
 import { ariesAskar } from '@hyperledger/aries-askar-react-native'
 import { indyVdr } from '@hyperledger/indy-vdr-react-native'
 
-const getAgentModules = (mediatorInvitationUrl: string, indyNetworks: [IndyVdrPoolConfig, ...IndyVdrPoolConfig[]]) => {
+export const getAgentModules = (
+  mediatorInvitationUrl: string,
+  indyNetworks: [IndyVdrPoolConfig, ...IndyVdrPoolConfig[]]
+) => {
   return {
     askar: new AskarModule({
       ariesAskar

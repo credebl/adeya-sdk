@@ -26,10 +26,11 @@ import { LogLevel, ConsoleLogger } from '@aries-framework/core'
 // Indy VDR
 import { IndyVdrPoolConfig } from '@aries-framework/indy-vdr'
 
-export { initializeAgent, AdeyaAgent } from './agent'
-export { LogLevel, ConsoleLogger, InitConfig, IndyVdrPoolConfig }
 export * from './providers'
 export * from './hooks'
+export * from './wallet'
+export { initializeAgent, AdeyaAgent } from './agent'
+export { LogLevel, ConsoleLogger, InitConfig, IndyVdrPoolConfig }
 export {
   V1RequestPresentationMessage,
   AnonCredsCredentialOffer,
