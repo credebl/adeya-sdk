@@ -4,6 +4,7 @@
     "commitArgs": ["--signoff"]
   },
   "github": {
-    "release": true
+    "release": true,
+    "autoGenerate": true
   }
 }
