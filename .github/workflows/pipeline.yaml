@@ -83,8 +83,8 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         shell: bash
         run: |
-          git config --global user.email "sairanjit.tummalapalli@ayanworks.com"
-          git config --global user.name "Sai Ranjit Tummalapalli"
+          git config --global user.email "amit.padmani@ayanworks.com"
+          git config --global user.name "Amit Padmani"
 
           if [ ${{ inputs.release-type }} == 'alpha' ]; then
             pnpm run --dir packages/${{ inputs.package }} release --preRelease=${{ inputs.release-type }} --npm.tag=alpha
