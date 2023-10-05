@@ -87,7 +87,7 @@ jobs:
           git config --global user.name "Sai Ranjit Tummalapalli"
 
           if [ ${{ inputs.release-type }} == 'alpha' ]; then
-            pnpm run --dir packages/${{ inputs.package }} release ${{ inputs.release-type }} --npm.tag=alpha
+            pnpm run --dir packages/${{ inputs.package }} release --preRelease=${{ inputs.release-type }} --npm.tag=alpha
           else
             pnpm run --dir packages/${{ inputs.package }} release ${{ inputs.release-type }} --npm.tag=latest
           fi
