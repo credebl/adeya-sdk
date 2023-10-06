@@ -26,6 +26,12 @@ interface WalletImportConfigWithAgent {
   indyNetworks: [IndyVdrPoolConfig, ...IndyVdrPoolConfig[]]
 }
 
+/**
+ * Checks if the given wallet pin is correct by opening a custom wallet instance with the provided secret.
+ *
+ * @param walletConfig - The configuration object for the wallet.
+ * @returns A Promise that resolves to a boolean indicating whether the wallet pin is correct or not.
+ */
 export const isWalletPinCorrect = async (walletConfig: WalletConfig) => {
   try {
     // NOTE: a custom wallet is used to check if the wallet key is correct. This is different from the wallet used in the rest of the app.
@@ -46,6 +52,13 @@ export const isWalletPinCorrect = async (walletConfig: WalletConfig) => {
   }
 }
 
+/**
+ * Checks if a wallet can be imported successfully with the given configuration.
+ *
+ * @param walletConfig The configuration for the wallet.
+ * @param importConfig The configuration for importing the wallet.
+ * @returns A Promise that resolves to a boolean indicating whether the wallet can be imported successfully.
+ */
 export const isWalletImportable = async (
   walletConfig: WalletConfig,
   importConfig: WalletExportImportConfig
@@ -72,6 +85,16 @@ export const isWalletImportable = async (
   }
 }
 
+/**
+ * Imports a wallet with an agent.
+ *
+ * @param importConfig The configuration for importing the wallet.
+ * @param agentConfig The configuration for the agent.
+ * @param mediatorInvitationUrl The mediator invitation URL.
+ * @param indyNetworks The Indy networks.
+ * @returns The agent with the imported wallet.
+ * @throws An error if the passphrase is invalid.
+ */
 export const importWalletWithAgent = async ({
   importConfig,
   agentConfig,
