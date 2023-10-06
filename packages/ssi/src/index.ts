@@ -50,6 +50,8 @@ export * from './providers'
 export * from './hooks'
 export * from './wallet'
 export * from './connections'
+export * from './credentials'
+export * from './proofs'
 export { initializeAgent, AdeyaAgent } from './agent'
 // Core
 export {
