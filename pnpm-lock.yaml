@@ -66,29 +66,29 @@ importers:
   packages/ssi:
     dependencies:
       '@aries-framework/anoncreds':
-        specifier: 0.4.1
-        version: 0.4.1(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.4.2
+        version: 0.4.2(expo@49.0.13)(react-native@0.71.13)
       '@aries-framework/anoncreds-rs':
-        specifier: 0.4.1
-        version: 0.4.1(@hyperledger/anoncreds-shared@0.1.0)(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.4.2
+        version: 0.4.2(@hyperledger/anoncreds-shared@0.1.0)(expo@49.0.13)(react-native@0.71.13)
       '@aries-framework/askar':
-        specifier: 0.4.1
-        version: 0.4.1(@hyperledger/aries-askar-shared@0.1.1)(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.4.2
+        version: 0.4.2(@hyperledger/aries-askar-shared@0.1.1)(expo@49.0.13)(react-native@0.71.13)
       '@aries-framework/core':
-        specifier: 0.4.1
-        version: 0.4.1(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.4.2
+        version: 0.4.2(expo@49.0.13)(react-native@0.71.13)
       '@aries-framework/indy-vdr':
-        specifier: 0.4.1
-        version: 0.4.1(@hyperledger/indy-vdr-shared@0.1.0)(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.4.2
+        version: 0.4.2(@hyperledger/indy-vdr-shared@0.1.0)(expo@49.0.13)(react-native@0.71.13)
       '@aries-framework/push-notifications':
         specifier: ^0.6.0
-        version: 0.6.0(@aries-framework/core@0.4.1)
+        version: 0.6.0(@aries-framework/core@0.4.2)
       '@aries-framework/react-hooks':
         specifier: 0.5.0
-        version: 0.5.0(@aries-framework/core@0.4.1)(expo@49.0.13)(react-native@0.71.13)(react@18.2.0)
+        version: 0.5.0(@aries-framework/core@0.4.2)(expo@49.0.13)(react-native@0.71.13)(react@18.2.0)
       '@aries-framework/react-native':
-        specifier: 0.4.1
-        version: 0.4.1(expo@49.0.13)(react-native-fs@2.20.0)(react-native-get-random-values@1.9.0)(react-native@0.71.13)
+        specifier: 0.4.2
+        version: 0.4.2(expo@49.0.13)(react-native-fs@2.20.0)(react-native-get-random-values@1.9.0)(react-native@0.71.13)
       '@hyperledger/anoncreds-react-native':
         specifier: ^0.1.0
         version: 0.1.0(react-native@0.71.13)(react@18.2.0)
@@ -123,13 +123,13 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.19
 
-  /@aries-framework/anoncreds-rs@0.4.1(@hyperledger/anoncreds-shared@0.1.0)(expo@49.0.13)(react-native@0.71.13):
-    resolution: {integrity: sha512-aacZV6Fm31Vzc9+nMltqNYHKMiBK9ZaiNhX9QTSEF5uBQOxA+BnJ9ZRfVPfGY3aLP7AkAbGeuE5pa/svNfP5dQ==}
+  /@aries-framework/anoncreds-rs@0.4.2(@hyperledger/anoncreds-shared@0.1.0)(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-S2QGDlVLJUaqjOj/b+lD+Xq8x4j88IyfJ3vwXaVwkrTlhpCiy/L+xoTaZq8UIcYIWfsrJ9CR6wl+gbCestGnFg==}
     peerDependencies:
       '@hyperledger/anoncreds-shared': ^0.1.0
     dependencies:
-      '@aries-framework/anoncreds': 0.4.1(expo@49.0.13)(react-native@0.71.13)
-      '@aries-framework/core': 0.4.1(expo@49.0.13)(react-native@0.71.13)
+      '@aries-framework/anoncreds': 0.4.2(expo@49.0.13)(react-native@0.71.13)
+      '@aries-framework/core': 0.4.2(expo@49.0.13)(react-native@0.71.13)
       '@hyperledger/anoncreds-shared': 0.1.0
       class-transformer: 0.5.1
       class-validator: 0.14.0
@@ -143,10 +143,10 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@aries-framework/anoncreds@0.4.1(expo@49.0.13)(react-native@0.71.13):
-    resolution: {integrity: sha512-aFlHAtCdL6BOS0Vq6YRSuInrTwp6gA8SVd0hcVAS8PwcLvFL3A2oS2FMh1TsY5ovnEjXbBanoZxbfPFXMa9YOQ==}
+  /@aries-framework/anoncreds@0.4.2(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-Jwn9TfzgOhuW6nxOs0DyzU1W/XL1XvyOt8zjhgz0ETDuwVJMtSTyN+1f4y5B0R7fuBYJ6KbdAwfeCRQT8BLa6g==}
     dependencies:
-      '@aries-framework/core': 0.4.1(expo@49.0.13)(react-native@0.71.13)
+      '@aries-framework/core': 0.4.2(expo@49.0.13)(react-native@0.71.13)
       bn.js: 5.2.1
       class-transformer: 0.5.1
       class-validator: 0.14.0
@@ -159,12 +159,12 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@aries-framework/askar@0.4.1(@hyperledger/aries-askar-shared@0.1.1)(expo@49.0.13)(react-native@0.71.13):
-    resolution: {integrity: sha512-GGdo/P/1F15maLfFJuv/VbNY9eKHQLfJ8bZ1sTyFt7e8EqGInxNqoO/4tzJFFYze0dU71NgpPTAcmoh8gmcQ7A==}
+  /@aries-framework/askar@0.4.2(@hyperledger/aries-askar-shared@0.1.1)(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-eQuLsXCjVxRRhUCd8yXqP0PD2S3QX3OPV2eUBb7PqkTxdo1ZCbiA8Q1pCP65l9s/zVIGT/2E1ys/n1sZZm1wmQ==}
     peerDependencies:
       '@hyperledger/aries-askar-shared': ^0.1.0
     dependencies:
-      '@aries-framework/core': 0.4.1(expo@49.0.13)(react-native@0.71.13)
+      '@aries-framework/core': 0.4.2(expo@49.0.13)(react-native@0.71.13)
       '@hyperledger/aries-askar-shared': 0.1.1
       bn.js: 5.2.1
       class-transformer: 0.5.1
@@ -217,13 +217,51 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@aries-framework/indy-vdr@0.4.1(@hyperledger/indy-vdr-shared@0.1.0)(expo@49.0.13)(react-native@0.71.13):
-    resolution: {integrity: sha512-qnWM0/8kZOw3j6Czci4sJULmfO5FVlTRmYQ9XKiJsaR9hqcQYs7fRbJdOdZG9NUfLxOnNd/0ZObCj8R7sz4WfQ==}
+  /@aries-framework/core@0.4.2(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-2qmDRkxD5vnPlcMjVTqu/Wxog9bUVU+tSr+7mgANgJ9q170FuoSuChU7WA5VCKEdmbRIM4BmvsnTlU8Y+iQ07A==}
+    dependencies:
+      '@digitalcredentials/jsonld': 5.2.2(expo@49.0.13)(react-native@0.71.13)
+      '@digitalcredentials/jsonld-signatures': 9.3.2(expo@49.0.13)(react-native@0.71.13)
+      '@digitalcredentials/vc': 1.1.2(expo@49.0.13)(react-native@0.71.13)
+      '@multiformats/base-x': 4.0.1
+      '@stablelib/ed25519': 1.0.3
+      '@stablelib/random': 1.0.2
+      '@stablelib/sha256': 1.0.1
+      '@types/node-fetch': 2.6.2
+      '@types/ws': 8.5.6
+      abort-controller: 3.0.0
+      big-integer: 1.6.51
+      borc: 3.0.0
+      buffer: 6.0.3
+      class-transformer: 0.5.1
+      class-validator: 0.14.0
+      did-resolver: 4.1.0
+      lru_map: 0.4.1
+      luxon: 3.4.3
+      make-error: 1.3.6
+      object-inspect: 1.12.3
+      query-string: 7.1.3
+      reflect-metadata: 0.1.13
+      rxjs: 7.8.1
+      tsyringe: 4.8.0
+      uuid: 9.0.1
+      varint: 6.0.0
+      web-did-resolver: 2.0.27
+    transitivePeerDependencies:
+      - domexception
+      - encoding
+      - expo
+      - react-native
+      - web-streams-polyfill
+    dev: false
+
+  /@aries-framework/indy-vdr@0.4.2(@hyperledger/indy-vdr-shared@0.1.0)(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-hFZlxWSbwXBY2sTbnCpgWbQAHZM2aeAs5Jj/Id+VJhwVsfwLvlQshBXmVpf6hIswCQsRFl3Q2lSn4MOh4pADYQ==}
     peerDependencies:
       '@hyperledger/indy-vdr-shared': ^0.1.0
     dependencies:
-      '@aries-framework/anoncreds': 0.4.1(expo@49.0.13)(react-native@0.71.13)
-      '@aries-framework/core': 0.4.1(expo@49.0.13)(react-native@0.71.13)
+      '@aries-framework/anoncreds': 0.4.2(expo@49.0.13)(react-native@0.71.13)
+      '@aries-framework/core': 0.4.2(expo@49.0.13)(react-native@0.71.13)
       '@hyperledger/indy-vdr-shared': 0.1.0
     transitivePeerDependencies:
       - domexception
@@ -233,12 +271,12 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@aries-framework/push-notifications@0.6.0(@aries-framework/core@0.4.1):
+  /@aries-framework/push-notifications@0.6.0(@aries-framework/core@0.4.2):
     resolution: {integrity: sha512-wPsIpJrzTFVispm8QsJSQ3+dh7eyG4xqpfEOp6l8dp0gLosju+s8Ln3UbXm/k8zag14zFX4QVk2iZb/pk6IFSQ==}
     peerDependencies:
       '@aries-framework/core': ^0.4.0
     dependencies:
-      '@aries-framework/core': 0.4.1(expo@49.0.13)(react-native@0.71.13)
+      '@aries-framework/core': 0.4.2(expo@49.0.13)(react-native@0.71.13)
       class-transformer: 0.5.1
       class-validator: 0.14.0
       reflect-metadata: 0.1.13
@@ -260,13 +298,13 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@aries-framework/react-hooks@0.5.0(@aries-framework/core@0.4.1)(expo@49.0.13)(react-native@0.71.13)(react@18.2.0):
+  /@aries-framework/react-hooks@0.5.0(@aries-framework/core@0.4.2)(expo@49.0.13)(react-native@0.71.13)(react@18.2.0):
     resolution: {integrity: sha512-5T0sRKfEZGF1q4WjPrFfkB68DdmYNsGIt0QyG7dSe00KaNg0U5+Gdh3xIWgw2ryinvTgg3tvUhN5Zl2BMx/hag==}
     peerDependencies:
       '@aries-framework/core': ^0.4.0
       react: '>=17.0.0 <19.0.0'
     dependencies:
-      '@aries-framework/core': 0.4.1(expo@49.0.13)(react-native@0.71.13)
+      '@aries-framework/core': 0.4.2(expo@49.0.13)(react-native@0.71.13)
       '@aries-framework/question-answer': 0.4.1(expo@49.0.13)(react-native@0.71.13)
       '@types/node-fetch': 2.6.6
       react: 18.2.0
@@ -279,14 +317,14 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@aries-framework/react-native@0.4.1(expo@49.0.13)(react-native-fs@2.20.0)(react-native-get-random-values@1.9.0)(react-native@0.71.13):
-    resolution: {integrity: sha512-ieKz6jA6bOadhibNXghzAZMC6/mu6c06eS4zx4Ubw3vtYg0izuqcEKfKSfLMRAymL2eYch7JsW5VO3OAzPShIw==}
+  /@aries-framework/react-native@0.4.2(expo@49.0.13)(react-native-fs@2.20.0)(react-native-get-random-values@1.9.0)(react-native@0.71.13):
+    resolution: {integrity: sha512-Sllg/iL4sFamT/IJmMv0KhFrhdspnCNtAjOi7othwiHmCxWb14HZplUQ6copVI+JT6S1RVX9rUbhUfpv9DhfEA==}
     peerDependencies:
       react-native: ^0.71.4
       react-native-fs: ^2.20.0
       react-native-get-random-values: ^1.8.0
     dependencies:
-      '@aries-framework/core': 0.4.1(expo@49.0.13)(react-native@0.71.13)
+      '@aries-framework/core': 0.4.2(expo@49.0.13)(react-native@0.71.13)
       '@azure/core-asynciterator-polyfill': 1.0.2
       events: 3.3.0
       react-native: 0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
@@ -3307,6 +3345,13 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
+  /@types/node-fetch@2.6.2:
+    resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
+    dependencies:
+      '@types/node': 20.7.0
+      form-data: 3.0.1
+    dev: false
+
   /@types/node-fetch@2.6.6:
     resolution: {integrity: sha512-95X8guJYhfqiuVVhRFxVQcf4hW/2bCuoPwDasMf/531STFoNoWTT7YDnWdXHEZKqAGUigmpG31r2FE70LwnzJw==}
     dependencies:
@@ -6183,7 +6228,6 @@ packages:
       combined-stream: 1.0.8
       mime-types: 2.1.35
     dev: false
-    optional: true
 
   /form-data@4.0.0:
     resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}

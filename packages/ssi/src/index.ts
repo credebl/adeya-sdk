@@ -41,8 +41,13 @@ import {
   GetCredentialFormatDataReturn,
   ProofFormatPayload,
   AgentMessage,
-  AutoAcceptProof
+  AutoAcceptProof,
+  ConnectionType
 } from '@aries-framework/core'
+import {
+  GetCredentialsForRequestReturn,
+  ProofFormatDataMessagePayload
+} from '@aries-framework/core/build/modules/proofs/protocol/ProofProtocolOptions'
 // Indy VDR
 import { IndyVdrPoolConfig } from '@aries-framework/indy-vdr'
 
@@ -75,7 +80,10 @@ export {
   GetCredentialFormatDataReturn,
   ProofFormatPayload,
   AgentMessage,
-  AutoAcceptProof
+  AutoAcceptProof,
+  ConnectionType,
+  GetCredentialsForRequestReturn,
+  ProofFormatDataMessagePayload
 }
 // Anoncreds
 export {
