@@ -53,39 +53,6 @@ export const isWalletPinCorrect = async (walletConfig: WalletConfig) => {
 }
 
 /**
- * Checks if a wallet can be imported successfully with the given configuration.
- *
- * @param walletConfig The configuration for the wallet.
- * @param importConfig The configuration for importing the wallet.
- * @returns A Promise that resolves to a boolean indicating whether the wallet can be imported successfully.
- */
-export const isWalletImportable = async (
-  walletConfig: WalletConfig,
-  importConfig: WalletExportImportConfig
-): Promise<boolean> => {
-  const fileSystem = new agentDependencies.FileSystem()
-  try {
-    const tempImportPath = fileSystem.tempPath + '/importTemp'
-    // Add temp path to wallet config
-    walletConfig.storage = {
-      type: 'sqlite',
-      path: tempImportPath
-    }
-    // NOTE: a custom wallet is used to check if the wallet passphrase is correct and can be imported successfully.
-    const askarWallet = new AskarWallet(new ConsoleLogger(LogLevel.off), fileSystem, new SigningProviderRegistry([]))
-    await askarWallet.import(walletConfig, importConfig)
-
-    await fileSystem.delete(importConfig.path)
-    return true
-  } catch (e) {
-    // eslint-disable-next-line no-console
-    console.log('Error importing wallet', e)
-    await fileSystem.delete(importConfig.path)
-    return false
-  }
-}
-
-/**
  * Imports a wallet with an agent.
  *
  * @param importConfig The configuration for importing the wallet.
