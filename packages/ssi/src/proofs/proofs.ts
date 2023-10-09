@@ -15,7 +15,7 @@ import type {
   V2ProofProtocol
 } from '@aries-framework/core'
 
-import { useAdeyaAgent } from 'src/providers'
+import { useAdeyaAgent } from '../providers'
 
 export type ProofFormats = (
   | V1ProofProtocol
