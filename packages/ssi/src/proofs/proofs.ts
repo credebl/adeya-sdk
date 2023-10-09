@@ -1,3 +1,4 @@
+import type { AdeyaAgent } from '../agent'
 import type {
   V1ProofProtocol,
   LegacyIndyProofFormatService,
@@ -15,8 +16,6 @@ import type {
   V2ProofProtocol
 } from '@aries-framework/core'
 
-import { useAdeyaAgent } from '../providers'
-
 export type ProofFormats = (
   | V1ProofProtocol
   | V2ProofProtocol<(LegacyIndyProofFormatService | AnonCredsProofFormatService)[]>
@@ -25,110 +24,105 @@ export type ProofFormats = (
 /**
  * Retrieves the formatted data for a proof record with the given ID.
  *
+ * @param agent The agent instance to use for retrieving the format data.
  * @param proofRecordId The ID of the proof record to retrieve format data for.
  * @returns A Promise that resolves with the format data for the proof record.
  */
-export const getProofFormatData = async (proofRecordId: string) => {
-  const { agent } = useAdeyaAgent()
-
+export const getProofFormatData = async (agent: AdeyaAgent, proofRecordId: string) => {
   return agent.proofs.getFormatData(proofRecordId)
 }
 
 /**
  * Retrieves the available credentials for a proof request.
  *
+ * @param agent The agent instance to use for retrieving the credentials.
  * @param options The options for retrieving the credentials.
  * @returns A Promise that resolves with the credentials for the proof request.
  */
-export const getCredentialsForProofRequest = async (options: GetCredentialsForProofRequestOptions<ProofFormats>) => {
-  const { agent } = useAdeyaAgent()
-
+export const getCredentialsForProofRequest = async (
+  agent: AdeyaAgent,
+  options: GetCredentialsForProofRequestOptions<ProofFormats>
+) => {
   return agent.proofs.getCredentialsForRequest(options)
 }
 
 /**
  * Select the credentials to be used for a proof request.
  *
+ * @param agent The agent instance to use for selecting the credentials.
  * @param options - The options for selecting the credentials.
  * @returns A promise that resolves to the selected credentials.
  */
 export const selectCredentialsForProofRequest = async (
+  agent: AdeyaAgent,
   options: SelectCredentialsForProofRequestOptions<ProofFormats>
 ) => {
-  const { agent } = useAdeyaAgent()
-
   return agent.proofs.selectCredentialsForRequest(options)
 }
 
 /**
  * Retrieves the proof request agent message associated with the given proof record ID.
  *
+ * @param agent The agent instance to use for retrieving the proof request message.
  * @param proofRecordId The ID of the proof record to retrieve the request message for.
  * @returns A Promise that resolves to the proof request message.
  */
-export const getProofRequestAgentMessage = async (proofRecordId: string) => {
-  const { agent } = useAdeyaAgent()
-
+export const getProofRequestAgentMessage = async (agent: AdeyaAgent, proofRecordId: string) => {
   return agent.proofs.findRequestMessage(proofRecordId)
 }
 
 /**
  * Creates a proof request.
  *
+ * @param agent The agent instance to use for creating the proof request.
  * @param options - The options for creating the proof request.
  * @returns A promise that resolves to the created proof request.
  */
-export const createProofRequest = async (options: CreateProofRequestOptions<ProofFormats>) => {
-  const { agent } = useAdeyaAgent()
-
+export const createProofRequest = async (agent: AdeyaAgent, options: CreateProofRequestOptions<ProofFormats>) => {
   return agent.proofs.createRequest(options)
 }
 
 /**
  * Requests a proof.
  *
+ * @param agent The agent instance to use for requesting the proof.
  * @param options - The options for requesting the proof.
  * @returns A Promise that resolves with the ProofExchangeRecord
  */
-export const requestProof = async (options: RequestProofOptions<ProofFormats>) => {
-  const { agent } = useAdeyaAgent()
-
+export const requestProof = async (agent: AdeyaAgent, options: RequestProofOptions<ProofFormats>) => {
   return agent.proofs.requestProof(options)
 }
 
 /**
  * Update a proof exchange record.
  *
+ * @param agent The agent instance to use for updating the proof exchange record.
  * @param proofRecord The proof exchange record to update.
  * @returns void.
  */
-export const updateProofRecord = (proofRecord: ProofExchangeRecord) => {
-  const { agent } = useAdeyaAgent()
-
+export const updateProofRecord = (agent: AdeyaAgent, proofRecord: ProofExchangeRecord) => {
   return agent.proofs.update(proofRecord)
 }
 
 /**
  * Accepts a proof request .
  *
+ * @param agent The agent instance to use for accepting the proof request.
  * @param options - The options for accepting the proof request.
  * @returns A Promise that resolves with the result of accepting the proof request.
  */
-export const acceptProofRequest = async (options: AcceptProofRequestOptions<ProofFormats>) => {
-  const { agent } = useAdeyaAgent()
-
+export const acceptProofRequest = async (agent: AdeyaAgent, options: AcceptProofRequestOptions<ProofFormats>) => {
   return agent.proofs.acceptRequest(options)
 }
 
 /**
  * Decline a proof request.
  *
+ * @param agent The agent instance to use for declining the proof request.
  * @param options - The options for declining the proof request.
  * @returns A Promise that resolves ProofExchangeRecord of declining the proof request.
  */
-export const declineProofRequest = async (options: DeclineProofRequestOptions) => {
-  const { agent } = useAdeyaAgent()
-
+export const declineProofRequest = async (agent: AdeyaAgent, options: DeclineProofRequestOptions) => {
   return agent.proofs.declineRequest(options)
 }
 
@@ -138,8 +132,6 @@ export const declineProofRequest = async (options: DeclineProofRequestOptions) =
  * @param options - The options for sending the problem report.
  * @returns A Promise that resolves ProofExchangeRecord when the problem report has been sent.
  */
-export const sendProofProblemReport = async (options: SendProofProblemReportOptions) => {
-  const { agent } = useAdeyaAgent()
-
+export const sendProofProblemReport = async (agent: AdeyaAgent, options: SendProofProblemReportOptions) => {
   return agent.proofs.sendProblemReport(options)
 }
