@@ -57,6 +57,8 @@ export * from './wallet'
 export * from './connections'
 export * from './credentials'
 export * from './proofs'
+export * from './basicMessages'
+export * from './pushNotifications'
 export { initializeAgent, AdeyaAgent } from './agent'
 // Core
 export {

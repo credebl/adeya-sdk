@@ -1,6 +1,7 @@
 // NOTE: We need to import these to be able to use the AskarWallet in this file.
 import '@hyperledger/aries-askar-react-native'
 
+import type { AdeyaAgent } from '../agent'
 import type { InitConfig } from '@aries-framework/core'
 import type { IndyVdrPoolConfig } from '@aries-framework/indy-vdr'
 
@@ -50,6 +51,16 @@ export const isWalletPinCorrect = async (walletConfig: WalletConfig) => {
     console.log('Error opening wallet', e)
     return false
   }
+}
+
+/**
+ * Exports a wallet.
+ *
+ * @param agent The agent.
+ * @param exportConfig The configuration for exporting the wallet.
+ */
+export const exportWallet = async (agent: AdeyaAgent, exportConfig: WalletExportImportConfig) => {
+  await agent.wallet.export(exportConfig)
 }
 
 /**
