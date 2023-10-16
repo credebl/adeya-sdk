@@ -11,7 +11,7 @@
     <th><b>Unstable Version</b></th>
   </tr>
   <tr>
-    <td>@adeya/ssi</td>
+    <td>[@adeya/ssi](https://github.com/credebl/adeya-sdk/tree/main/packages/ssi)</td>
     <td>
       <a href="https://npmjs.com/package/@adeya/ssi">
         <img alt="@adeya/ssi version" src="https://img.shields.io/npm/v/@adeya/ssi.svg"/>
