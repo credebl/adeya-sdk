@@ -126,5 +126,3 @@ export const initializeAgent = async ({
 
   return agent
 }
-
-// type AdeyaAgent = Awaited<ReturnType<typeof initializeAgent>>

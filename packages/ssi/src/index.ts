@@ -18,10 +18,17 @@ import {
   AnonCredsRequestedAttribute,
   AnonCredsRequestedPredicate,
   LegacyIndyProofRequest,
-  AnonCredsProofRequest
+  AnonCredsProofRequest,
+  AnonCredsModule,
+  V1CredentialProtocol,
+  LegacyIndyCredentialFormatService,
+  AnonCredsCredentialFormatService,
+  V1ProofProtocol
 } from '@aries-framework/anoncreds'
 import { AnonCredsCredentialMetadataKey } from '@aries-framework/anoncreds/build/utils/metadata'
 // Core
+import { AnonCredsRsModule } from '@aries-framework/anoncreds-rs'
+import { AskarModule } from '@aries-framework/askar'
 import {
   LogLevel,
   ConsoleLogger,
@@ -42,14 +49,34 @@ import {
   ProofFormatPayload,
   AgentMessage,
   AutoAcceptProof,
-  ConnectionType
+  ConnectionType,
+  MediationRecipientModule,
+  MediatorPickupStrategy,
+  DidsModule,
+  JwkDidRegistrar,
+  WebDidResolver,
+  JwkDidResolver,
+  CredentialsModule,
+  AutoAcceptCredential,
+  V2CredentialProtocol,
+  JsonLdCredentialFormatService,
+  ProofsModule,
+  V2ProofProtocol,
+  ConnectionsModule
 } from '@aries-framework/core'
 import {
   GetCredentialsForRequestReturn,
   ProofFormatDataMessagePayload
 } from '@aries-framework/core/build/modules/proofs/protocol/ProofProtocolOptions'
 // Indy VDR
-import { IndyVdrPoolConfig } from '@aries-framework/indy-vdr'
+import {
+  IndyVdrAnonCredsRegistry,
+  IndyVdrIndyDidResolver,
+  IndyVdrModule,
+  IndyVdrPoolConfig,
+  IndyVdrSovDidResolver
+} from '@aries-framework/indy-vdr'
+import { PushNotificationsFcmModule } from '@aries-framework/push-notifications'
 
 export * from './agent'
 export * from './providers'
@@ -65,7 +92,6 @@ export {
   LogLevel,
   ConsoleLogger,
   InitConfig,
-  IndyVdrPoolConfig,
   BasicMessageRecord,
   ConnectionRecord,
   OutOfBandRecord,
@@ -85,7 +111,20 @@ export {
   AutoAcceptProof,
   ConnectionType,
   GetCredentialsForRequestReturn,
-  ProofFormatDataMessagePayload
+  ProofFormatDataMessagePayload,
+  MediationRecipientModule,
+  MediatorPickupStrategy,
+  DidsModule,
+  JwkDidRegistrar,
+  WebDidResolver,
+  JwkDidResolver,
+  CredentialsModule,
+  AutoAcceptCredential,
+  V2CredentialProtocol,
+  JsonLdCredentialFormatService,
+  ProofsModule,
+  V2ProofProtocol,
+  ConnectionsModule
 }
 // Anoncreds
 export {
@@ -106,5 +145,18 @@ export {
   AnonCredsRequestedPredicate,
   LegacyIndyProofRequest,
   AnonCredsProofRequest,
-  AnonCredsCredentialMetadataKey
+  AnonCredsCredentialMetadataKey,
+  AnonCredsModule,
+  V1CredentialProtocol,
+  LegacyIndyCredentialFormatService,
+  AnonCredsCredentialFormatService,
+  V1ProofProtocol
 }
+// Indy Vdr
+export { IndyVdrAnonCredsRegistry, IndyVdrPoolConfig, IndyVdrIndyDidResolver, IndyVdrModule, IndyVdrSovDidResolver }
+// Askar
+export { AskarModule }
+// Anoncreds RS
+export { AnonCredsRsModule }
+// Push Notifications
+export { PushNotificationsFcmModule }
