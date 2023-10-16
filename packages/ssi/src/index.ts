@@ -51,6 +51,7 @@ import {
 // Indy VDR
 import { IndyVdrPoolConfig } from '@aries-framework/indy-vdr'
 
+export * from './agent'
 export * from './providers'
 export * from './hooks'
 export * from './wallet'
@@ -59,7 +60,6 @@ export * from './credentials'
 export * from './proofs'
 export * from './basicMessages'
 export * from './pushNotifications'
-export { initializeAgent, AdeyaAgent } from './agent'
 // Core
 export {
   LogLevel,

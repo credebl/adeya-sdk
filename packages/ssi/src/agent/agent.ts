@@ -1,4 +1,5 @@
 import type { InitConfig } from '@aries-framework/core'
+import type { AgentModulesInput } from '@aries-framework/core/build/agent/AgentModules'
 import type { IndyVdrPoolConfig } from '@aries-framework/indy-vdr'
 
 import {
@@ -104,12 +105,10 @@ export const getAgentModules = (
 
 export const initializeAgent = async ({
   agentConfig,
-  mediatorInvitationUrl,
-  indyNetworks
+  modules
 }: {
   agentConfig: InitConfig
-  mediatorInvitationUrl: string
-  indyNetworks: [IndyVdrPoolConfig, ...IndyVdrPoolConfig[]]
+  modules: AgentModulesInput
 }) => {
   const agent = new Agent({
     dependencies: agentDependencies,
@@ -117,7 +116,7 @@ export const initializeAgent = async ({
       autoUpdateStorageOnStartup: true,
       ...agentConfig
     },
-    modules: getAgentModules(mediatorInvitationUrl, indyNetworks)
+    modules
   })
 
   agent.registerOutboundTransport(new HttpOutboundTransport())
@@ -128,4 +127,4 @@ export const initializeAgent = async ({
   return agent
 }
 
-export type AdeyaAgent = Awaited<ReturnType<typeof initializeAgent>>
+// type AdeyaAgent = Awaited<ReturnType<typeof initializeAgent>>

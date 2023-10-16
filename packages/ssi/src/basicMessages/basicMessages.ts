@@ -1,4 +1,4 @@
-import type { AdeyaAgent } from '../agent'
+import type { Agent } from '@aries-framework/core'
 
 /**
  * Sends a basic message to the connection with the given connection id.
@@ -7,6 +7,6 @@ import type { AdeyaAgent } from '../agent'
  * @param connectionId The connection id.
  * @param message The message to send.
  */
-export const sendBasicMessage = async (agent: AdeyaAgent, connectionId: string, message: string) => {
+export const sendBasicMessage = async (agent: Agent, connectionId: string, message: string) => {
   return agent.basicMessages.sendMessage(connectionId, message)
 }

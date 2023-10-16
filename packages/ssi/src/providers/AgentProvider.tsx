@@ -1,10 +1,10 @@
-import type { AdeyaAgent } from '../agent'
+import type { Agent } from '@aries-framework/core'
 
 import AgentProvider, { useAgent } from '@aries-framework/react-hooks'
 
 const useAdeyaAgent: () => {
   loading: boolean
-  agent: AdeyaAgent
+  agent: Agent
 } = useAgent
 
 export { useAdeyaAgent, AgentProvider as AdeyaAgentProvider }
