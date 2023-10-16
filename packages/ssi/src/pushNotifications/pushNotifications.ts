@@ -1,4 +1,4 @@
-import type { AdeyaAgent } from '../agent'
+import type { Agent } from '@aries-framework/core'
 import type { FcmDeviceInfo } from '@aries-framework/push-notifications'
 
 /**
@@ -9,10 +9,6 @@ import type { FcmDeviceInfo } from '@aries-framework/push-notifications'
  * @param deviceInfo - The device information for push notifications.
  * @returns void.
  */
-export const setPushNotificationDeviceInfo = async (
-  agent: AdeyaAgent,
-  connectionId: string,
-  deviceInfo: FcmDeviceInfo
-) => {
+export const setPushNotificationDeviceInfo = async (agent: Agent, connectionId: string, deviceInfo: FcmDeviceInfo) => {
   return agent.modules.pushNotificationsFcm.setDeviceInfo(connectionId, deviceInfo)
 }

@@ -1,9 +1,8 @@
 // NOTE: We need to import these to be able to use the AskarWallet in this file.
 import '@hyperledger/aries-askar-react-native'
 
-import type { AdeyaAgent } from '../agent'
 import type { InitConfig } from '@aries-framework/core'
-import type { IndyVdrPoolConfig } from '@aries-framework/indy-vdr'
+import type { AgentModulesInput } from '@aries-framework/core/build/agent/AgentModules'
 
 import { AskarWallet } from '@aries-framework/askar'
 import {
@@ -18,13 +17,10 @@ import {
 } from '@aries-framework/core'
 import { agentDependencies } from '@aries-framework/react-native'
 
-import { getAgentModules } from '../agent'
-
 interface WalletImportConfigWithAgent {
   agentConfig: InitConfig
   importConfig: WalletExportImportConfig
-  mediatorInvitationUrl: string
-  indyNetworks: [IndyVdrPoolConfig, ...IndyVdrPoolConfig[]]
+  modules: AgentModulesInput
 }
 
 /**
@@ -59,7 +55,7 @@ export const isWalletPinCorrect = async (walletConfig: WalletConfig) => {
  * @param agent The agent.
  * @param exportConfig The configuration for exporting the wallet.
  */
-export const exportWallet = async (agent: AdeyaAgent, exportConfig: WalletExportImportConfig) => {
+export const exportWallet = async (agent: Agent, exportConfig: WalletExportImportConfig) => {
   await agent.wallet.export(exportConfig)
 }
 
@@ -73,12 +69,7 @@ export const exportWallet = async (agent: AdeyaAgent, exportConfig: WalletExport
  * @returns The agent with the imported wallet.
  * @throws An error if the passphrase is invalid.
  */
-export const importWalletWithAgent = async ({
-  importConfig,
-  agentConfig,
-  mediatorInvitationUrl,
-  indyNetworks
-}: WalletImportConfigWithAgent) => {
+export const importWalletWithAgent = async ({ importConfig, agentConfig, modules }: WalletImportConfigWithAgent) => {
   if (!agentConfig.walletConfig?.id || !agentConfig.walletConfig.key) {
     // Cannot find wallet id/key in agent config, so we cannot import the wallet
     return
@@ -94,7 +85,7 @@ export const importWalletWithAgent = async ({
       autoUpdateStorageOnStartup: true,
       ...agentConfig
     },
-    modules: getAgentModules(mediatorInvitationUrl, indyNetworks)
+    modules
   })
 
   agent.registerOutboundTransport(new HttpOutboundTransport())

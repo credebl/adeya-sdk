@@ -1,5 +1,5 @@
-import type { AdeyaAgent } from '../agent'
 import type {
+  Agent,
   AgentMessage,
   ConnectionInvitationMessage,
   CreateLegacyInvitationConfig,
@@ -17,11 +17,7 @@ import type {
  * @param config configuration of how a connection invitation should be created
  * @returns out-of-band record and connection invitation together with invitationUrl
  */
-export const createLegacyInvitation = async (
-  agent: AdeyaAgent,
-  domain: string,
-  config?: CreateLegacyInvitationConfig
-) => {
+export const createLegacyInvitation = async (agent: Agent, domain: string, config?: CreateLegacyInvitationConfig) => {
   const record = await agent.oob.createLegacyInvitation(config)
 
   const invitationUrl = record.invitation.toUrl({ domain })
@@ -46,7 +42,7 @@ export const createLegacyInvitation = async (
  * @returns A Promise that resolves to the created invitation.
  */
 export const createLegacyConnectionlessInvitation = async (
-  agent: AdeyaAgent,
+  agent: Agent,
   config: {
     recordId?: string | undefined
     message: AgentMessage
@@ -65,7 +61,7 @@ export const createLegacyConnectionlessInvitation = async (
  * @param config Optional configuration for the invitation.
  * @returns An object containing the invitation record, the invitation object, and the invitation URL.
  */
-export const createInvitation = async (agent: AdeyaAgent, domain: string, config?: CreateOutOfBandInvitationConfig) => {
+export const createInvitation = async (agent: Agent, domain: string, config?: CreateOutOfBandInvitationConfig) => {
   const record = await agent.oob.createInvitation(config)
 
   const invitationUrl = record.outOfBandInvitation.toUrl({ domain })
@@ -87,7 +83,7 @@ export const createInvitation = async (agent: AdeyaAgent, domain: string, config
  * @returns The connection record.
  */
 export const acceptInvitation = async (
-  agent: AdeyaAgent,
+  agent: Agent,
   invitation: ConnectionInvitationMessage | OutOfBandInvitation,
   config?: ReceiveOutOfBandInvitationConfig
 ) => {
@@ -103,7 +99,7 @@ export const acceptInvitation = async (
  * @param invitationUrl The URL of the invitation to parse.
  * @returns A Promise that resolves with the parsed invitation.
  */
-export const parseInvitationFromUrl = async (agent: AdeyaAgent, invitationUrl: string) => {
+export const parseInvitationFromUrl = async (agent: Agent, invitationUrl: string) => {
   return agent.oob.parseInvitation(invitationUrl)
 }
 
@@ -117,7 +113,7 @@ export const parseInvitationFromUrl = async (agent: AdeyaAgent, invitationUrl: s
  * @throws An error if the invitation cannot be parsed from the URL or if the connection does not have an ID.
  */
 export const acceptInvitationFromUrl = async (
-  agent: AdeyaAgent,
+  agent: Agent,
   invitationUrl: string,
   config?: ReceiveOutOfBandInvitationConfig
 ) => {
@@ -142,7 +138,7 @@ export const acceptInvitationFromUrl = async (
  * @param agent The agent instance to use for retrieving the connections.
  * @returns A promise that resolves to an array of Connection objects.
  */
-export const getAllConnections = async (agent: AdeyaAgent) => {
+export const getAllConnections = async (agent: Agent) => {
   return agent.connections.getAll()
 }
 
@@ -153,7 +149,7 @@ export const getAllConnections = async (agent: AdeyaAgent) => {
  * @param connectionId The ID of the connection to retrieve.
  * @returns A Promise that resolves to the connection object.
  */
-export const getConnectionById = async (agent: AdeyaAgent, connectionId: string) => {
+export const getConnectionById = async (agent: Agent, connectionId: string) => {
   return agent.connections.getById(connectionId)
 }
 
@@ -164,7 +160,7 @@ export const getConnectionById = async (agent: AdeyaAgent, connectionId: string)
  * @param connectionId The ID of the connection to find.
  * @returns A Promise that resolves with the connection object, or null if not found.
  */
-export const findConnectionById = async (agent: AdeyaAgent, connectionId: string) => {
+export const findConnectionById = async (agent: Agent, connectionId: string) => {
   return await agent.connections.findById(connectionId)
 }
 
@@ -175,7 +171,7 @@ export const findConnectionById = async (agent: AdeyaAgent, connectionId: string
  * @param connectionId The ID of the connection to find.
  * @returns A Promise that resolves to the out-of-band record with the given ID.
  */
-export const findOutOfBandRecordById = async (agent: AdeyaAgent, connectionId: string) => {
+export const findOutOfBandRecordById = async (agent: Agent, connectionId: string) => {
   return agent.oob.findById(connectionId)
 }
 
@@ -185,7 +181,7 @@ export const findOutOfBandRecordById = async (agent: AdeyaAgent, connectionId: s
  * @param connectionId The ID of the connection to be deleted.
  * @returns A boolean indicating whether the connection was successfully deleted or not.
  */
-export const deleteConnectionById = async (agent: AdeyaAgent, connectionId: string) => {
+export const deleteConnectionById = async (agent: Agent, connectionId: string) => {
   await agent.connections.deleteById(connectionId)
   return true
 }
