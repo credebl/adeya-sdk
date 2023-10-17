@@ -62,7 +62,8 @@ import {
   JsonLdCredentialFormatService,
   ProofsModule,
   V2ProofProtocol,
-  ConnectionsModule
+  ConnectionsModule,
+  Agent
 } from '@aries-framework/core'
 import {
   GetCredentialsForRequestReturn,
@@ -124,7 +125,8 @@ export {
   JsonLdCredentialFormatService,
   ProofsModule,
   V2ProofProtocol,
-  ConnectionsModule
+  ConnectionsModule,
+  Agent
 }
 // Anoncreds
 export {
