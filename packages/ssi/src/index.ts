@@ -23,7 +23,8 @@ import {
   V1CredentialProtocol,
   LegacyIndyCredentialFormatService,
   AnonCredsCredentialFormatService,
-  V1ProofProtocol
+  V1ProofProtocol,
+  AnonCredsCredentialInfo
 } from '@aries-framework/anoncreds'
 import { AnonCredsCredentialMetadataKey } from '@aries-framework/anoncreds/build/utils/metadata'
 // Core
@@ -63,7 +64,8 @@ import {
   ProofsModule,
   V2ProofProtocol,
   ConnectionsModule,
-  Agent
+  Agent,
+  BasicMessageRepository
 } from '@aries-framework/core'
 import {
   GetCredentialsForRequestReturn,
@@ -126,7 +128,8 @@ export {
   ProofsModule,
   V2ProofProtocol,
   ConnectionsModule,
-  Agent
+  Agent,
+  BasicMessageRepository
 }
 // Anoncreds
 export {
@@ -152,7 +155,8 @@ export {
   V1CredentialProtocol,
   LegacyIndyCredentialFormatService,
   AnonCredsCredentialFormatService,
-  V1ProofProtocol
+  V1ProofProtocol,
+  AnonCredsCredentialInfo
 }
 // Indy Vdr
 export { IndyVdrAnonCredsRegistry, IndyVdrPoolConfig, IndyVdrIndyDidResolver, IndyVdrModule, IndyVdrSovDidResolver }
