@@ -176,12 +176,34 @@ export const findOutOfBandRecordById = async (agent: Agent, connectionId: string
 }
 
 /**
- * Deletes a connection by its ID.
+ * Finds an out-of-band record by its invitation ID.
+ *
+ * @param agent The agent instance to use for finding the out-of-band record.
+ * @param receivedInvitationId The ID of the invitation to find.
+ * @returns A Promise that resolves to the out-of-band record with the given ID.
+ */
+export const findByReceivedInvitationId = async (agent: Agent, receivedInvitationId: string) => {
+  return agent.oob.findByReceivedInvitationId(receivedInvitationId)
+}
+
+/**
+ * Deletes a connection record by its ID.
  *
  * @param connectionId The ID of the connection to be deleted.
  * @returns A boolean indicating whether the connection was successfully deleted or not.
  */
-export const deleteConnectionById = async (agent: Agent, connectionId: string) => {
+export const deleteConnectionRecordById = async (agent: Agent, connectionId: string) => {
   await agent.connections.deleteById(connectionId)
+  return true
+}
+
+/**
+ * Deletes an out-of-band record by its ID.
+ *
+ * @param outOfBandId The ID of the out-of-band record to be deleted.
+ * @returns A boolean indicating whether the out-of-band record was successfully deleted or not.
+ */
+export const deleteOobRecordById = async (agent: Agent, outOfBandId: string) => {
+  await agent.oob.deleteById(outOfBandId)
   return true
 }
