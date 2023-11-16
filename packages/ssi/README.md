@@ -3,17 +3,19 @@
 [![npm](https://img.shields.io/npm/v/@adeya/ssi.svg)](https://www.npmjs.com/package/@adeya/ssi)
 [![npm](https://img.shields.io/npm/v/@adeya/ssi/alpha.svg)](https://www.npmjs.com/package/@adeya/ssi)
 
-- [Installing](#installing)
-- [Usage](#usage)
-- [API](#api)
-  - [Agent](#agent)
-  - [Wallet](#wallet)
-  - [Connections](#connections)
-  - [Credentials](#credentials)
-  - [Proofs](#proofs)
-  - [BasicMessages](#basicmessages)
-  - [PushNotifications](#pushnotifications)
-  - [Hooks](#hooks)
+- [@adeya/ssi](#adeyassi)
+  - [Installing](#installing)
+  - [Peer Dependencies](#peer-dependencies)
+  - [Usage](#usage)
+  - [API](#api)
+    - [Agent](#agent)
+    - [Wallet](#wallet)
+    - [Connections](#connections)
+    - [Credentials](#credentials)
+    - [Proofs](#proofs)
+    - [BasicMessages](#basicmessages)
+    - [PushNotifications](#pushnotifications)
+    - [Hooks](#hooks)
 
 ## Installing
 
@@ -201,12 +203,28 @@ import { findOutOfBandRecordById } from '@adeya/ssi'
 const record = await findOutOfBandRecordById(agent, recordId)
 ```
 
-- deleteConnectionById - Delete a connection by id.
+- findByReceivedInvitationId - Find an out of band record by received invitation id.
 
 ```ts
-import { deleteConnectionById } from '@adeya/ssi'
+import { findByReceivedInvitationId } from '@adeya/ssi'
 
-await deleteConnectionById(agent, connectionId)
+const record = await findByReceivedInvitationId(agent, receivedInvitationId)
+```
+
+- deleteConnectionRecordById - Delete a connection record by id.
+
+```ts
+import { deleteConnectionRecordById } from '@adeya/ssi'
+
+await deleteConnectionRecordById(agent, connectionId)
+```
+
+- deleteOobRecordById - Delete a out-of-band record by id.
+
+```ts
+import { deleteOobRecordById } from '@adeya/ssi'
+
+await deleteOobRecordById(agent, outOfBandId)
 ```
 
 ### Credentials
