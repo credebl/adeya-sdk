@@ -65,7 +65,8 @@ import {
   V2ProofProtocol,
   ConnectionsModule,
   Agent,
-  BasicMessageRepository
+  BasicMessageRepository,
+  AriesFrameworkError
 } from '@aries-framework/core'
 import {
   GetCredentialsForRequestReturn,
@@ -129,7 +130,8 @@ export {
   V2ProofProtocol,
   ConnectionsModule,
   Agent,
-  BasicMessageRepository
+  BasicMessageRepository,
+  AriesFrameworkError
 }
 // Anoncreds
 export {
