@@ -1,7 +1,7 @@
 // NOTE: We need to import these to be able to use the AskarWallet in this file.
 import '@hyperledger/aries-askar-react-native'
 
-import type { InitConfig } from '@aries-framework/core'
+import type { InitConfig, WalletConfig, WalletExportImportConfig } from '@aries-framework/core'
 import type { AgentModulesInput } from '@aries-framework/core/build/agent/AgentModules'
 
 import { AskarWallet } from '@aries-framework/askar'
@@ -12,8 +12,7 @@ import {
   LogLevel,
   SigningProviderRegistry,
   WsOutboundTransport,
-  type WalletConfig,
-  type WalletExportImportConfig
+  utils
 } from '@aries-framework/core'
 import { agentDependencies } from '@aries-framework/react-native'
 
@@ -71,8 +70,8 @@ export const isWalletImportable = async (
   importConfig: WalletExportImportConfig
 ): Promise<boolean> => {
   const fileSystem = new agentDependencies.FileSystem()
+  const tempImportPath = fileSystem.tempPath + '/' + utils.uuid()
   try {
-    const tempImportPath = fileSystem.tempPath + '/importTemp'
     // Add temp path to wallet config
     walletConfig.storage = {
       type: 'sqlite',
@@ -82,12 +81,12 @@ export const isWalletImportable = async (
     const askarWallet = new AskarWallet(new ConsoleLogger(LogLevel.debug), fileSystem, new SigningProviderRegistry([]))
     await askarWallet.import(walletConfig, importConfig)
 
-    await fileSystem.delete(importConfig.path)
+    await fileSystem.delete(tempImportPath)
     return true
   } catch (e) {
     // eslint-disable-next-line no-console
     console.log('Error importing wallet', e)
-    await fileSystem.delete(importConfig.path)
+    await fileSystem.delete(tempImportPath)
     return false
   }
 }
