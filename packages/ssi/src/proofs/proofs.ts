@@ -7,6 +7,7 @@ import type {
   GetCredentialsForProofRequestOptions,
   ProofExchangeRecord,
   ProofProtocol,
+  ProposeProofOptions,
   RequestProofOptions,
   SelectCredentialsForProofRequestOptions,
   SendProofProblemReportOptions
@@ -60,6 +61,17 @@ export const selectCredentialsForProofRequest = async <ProofProtocols extends Pr
  */
 export const getProofRequestAgentMessage = async (agent: Agent, proofRecordId: string) => {
   return agent.proofs.findRequestMessage(proofRecordId)
+}
+
+/**
+ * Propose a proof to connection.
+ *
+ * @param agent The agent instance to use for proposing the proof.
+ * @param options - The options for proposing the proof.
+ * @returns A promise that resolves with the proposed proof.
+ */
+export const proposeProof = async (agent: Agent, options: ProposeProofOptions<DefaultProofProtocols>) => {
+  return agent.proofs.proposeProof(options)
 }
 
 /**

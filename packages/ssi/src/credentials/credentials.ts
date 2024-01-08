@@ -4,6 +4,7 @@ import type {
   CredentialExchangeRecord,
   CredentialProtocol,
   DeleteCredentialOptions,
+  ProposeCredentialOptions,
   SendCredentialProblemReportOptions
 } from '@aries-framework/core'
 
@@ -26,6 +27,17 @@ export const getAllCredentialExchangeRecords = async (agent: Agent) => {
  */
 export const getFormattedCredentialData = async (agent: Agent, credentialRecordId: string) => {
   return agent.credentials.getFormatData(credentialRecordId)
+}
+
+/**
+ * Propose a credential to connection.
+ *
+ * @param agent The agent instance to use for accepting the credential offer.
+ * @param options - The options for proposing the credential.
+ * @returns A promise that resolves with the proposed credential.
+ */
+export const proposeCredential = async (agent: Agent, options: ProposeCredentialOptions<[]>) => {
+  return agent.credentials.proposeCredential(options)
 }
 
 /**
