@@ -91,6 +91,7 @@ export * from './credentials'
 export * from './proofs'
 export * from './basicMessages'
 export * from './pushNotifications'
+export * from './genericRecords'
 // Core
 export {
   LogLevel,
