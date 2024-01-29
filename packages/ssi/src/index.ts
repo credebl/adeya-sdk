@@ -66,7 +66,15 @@ import {
   ConnectionsModule,
   Agent,
   BasicMessageRepository,
-  AriesFrameworkError
+  AriesFrameworkError,
+  ConnectionStateChangedEvent,
+  CredentialStateChangedEvent,
+  ProofStateChangedEvent,
+  ConnectionEventTypes,
+  CredentialEventTypes,
+  ProofEventTypes,
+  GenericRecord,
+  SaveGenericRecordOption
 } from '@aries-framework/core'
 import {
   GetCredentialsForRequestReturn,
@@ -132,7 +140,15 @@ export {
   ConnectionsModule,
   Agent,
   BasicMessageRepository,
-  AriesFrameworkError
+  AriesFrameworkError,
+  ConnectionStateChangedEvent,
+  CredentialStateChangedEvent,
+  ProofStateChangedEvent,
+  ConnectionEventTypes,
+  CredentialEventTypes,
+  ProofEventTypes,
+  GenericRecord,
+  SaveGenericRecordOption
 }
 // Anoncreds
 export {
