@@ -76,7 +76,8 @@ import {
   ProofStateChangedEvent,
   ConnectionEventTypes,
   CredentialEventTypes,
-  ProofEventTypes
+  ProofEventTypes,
+  Query
 } from '@aries-framework/core'
 import {
   GetCredentialsForRequestReturn,
@@ -150,7 +151,8 @@ export {
   CredentialEventTypes,
   ProofEventTypes,
   GenericRecord,
-  SaveGenericRecordOption
+  SaveGenericRecordOption,
+  Query
 }
 // Anoncreds
 export {
