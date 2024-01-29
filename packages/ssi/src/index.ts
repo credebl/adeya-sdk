@@ -73,13 +73,12 @@ import {
   ConnectionEventTypes,
   CredentialEventTypes,
   ProofEventTypes,
-  GenericRecord,
-  SaveGenericRecordOption
 } from '@aries-framework/core'
 import {
   GetCredentialsForRequestReturn,
   ProofFormatDataMessagePayload
 } from '@aries-framework/core/build/modules/proofs/protocol/ProofProtocolOptions'
+import type { GenericRecord, SaveGenericRecordOption } from '@aries-framework/core/build/modules/generic-records/repository/GenericRecord';
 // Indy VDR
 import {
   IndyVdrAnonCredsRegistry,
