@@ -30,12 +30,12 @@ export const sendAnswer = async (agent: Agent, questionRecordId: string, respons
 }
 
 /**
- * Retrieves the question record with the given id.
+ * Retrieves all question answer records that match the given query.
  *
  * @param agent The agent instance.
  * @param query The query to use to find the question record.
  */
-export const getQuestion = async (agent: Agent, query: Query<QuestionAnswerRecord>) => {
+export const getAllQuestionAnswerRecords = async (agent: Agent, query: Query<QuestionAnswerRecord>) => {
   return agent.modules.questionAnswer.findAllByQuery(query)
 }
 
