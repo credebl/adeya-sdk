@@ -77,7 +77,8 @@ import {
   ConnectionEventTypes,
   CredentialEventTypes,
   ProofEventTypes,
-  Query
+  Query,
+  utils
 } from '@aries-framework/core'
 import {
   GetCredentialsForRequestReturn,
@@ -103,6 +104,7 @@ export * from './proofs'
 export * from './basicMessages'
 export * from './pushNotifications'
 export * from './genericRecords'
+export * from './questionAnswer'
 // Core
 export {
   LogLevel,
@@ -152,7 +154,8 @@ export {
   ProofEventTypes,
   GenericRecord,
   SaveGenericRecordOption,
-  Query
+  Query,
+  utils
 }
 // Anoncreds
 export {
