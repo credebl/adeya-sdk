@@ -39,6 +39,7 @@ import {
   IndyVdrSovDidResolver
 } from '@aries-framework/indy-vdr'
 import { PushNotificationsFcmModule } from '@aries-framework/push-notifications'
+import { QuestionAnswerModule } from '@aries-framework/question-answer'
 import { agentDependencies } from '@aries-framework/react-native'
 import { anoncreds } from '@hyperledger/anoncreds-react-native'
 import { ariesAskar } from '@hyperledger/aries-askar-react-native'
@@ -99,7 +100,8 @@ export const getAgentModules = (
     connections: new ConnectionsModule({
       autoAcceptConnections: true
     }),
-    pushNotificationsFcm: new PushNotificationsFcmModule()
+    pushNotificationsFcm: new PushNotificationsFcmModule(),
+    questionAnswer: new QuestionAnswerModule()
   }
 }
 
