@@ -93,6 +93,13 @@ import {
   IndyVdrSovDidResolver
 } from '@aries-framework/indy-vdr'
 import { PushNotificationsFcmModule } from '@aries-framework/push-notifications'
+// Q&A
+import {
+  QuestionAnswerRecord,
+  QuestionAnswerEventTypes,
+  QuestionAnswerStateChangedEvent,
+  QuestionAnswerState
+} from '@aries-framework/question-answer'
 
 export * from './agent'
 export * from './providers'
@@ -192,3 +199,5 @@ export { AskarModule }
 export { AnonCredsRsModule }
 // Push Notifications
 export { PushNotificationsFcmModule }
+// Q&A
+export { QuestionAnswerRecord, QuestionAnswerEventTypes, QuestionAnswerStateChangedEvent, QuestionAnswerState }
