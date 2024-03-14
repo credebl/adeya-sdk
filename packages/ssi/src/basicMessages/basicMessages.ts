@@ -1,4 +1,4 @@
-import type { Agent } from '@aries-framework/core'
+import type { Agent } from '@credo-ts/core'
 
 /**
  * Sends a basic message to the connection with the given connection id.

@@ -11,7 +11,7 @@ import type {
   RequestProofOptions,
   SelectCredentialsForProofRequestOptions,
   SendProofProblemReportOptions
-} from '@aries-framework/core'
+} from '@credo-ts/core'
 
 /**
  * Retrieves the formatted data for a proof record with the given ID.

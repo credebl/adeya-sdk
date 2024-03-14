@@ -1,5 +1,5 @@
-import type { Agent } from '@aries-framework/core'
-import type { FcmDeviceInfo } from '@aries-framework/push-notifications'
+import type { Agent } from '@credo-ts/core'
+import type { FcmDeviceInfo } from '@credo-ts/push-notifications'
 
 /**
  * Sets the device information for push notifications using the provided connection ID and device information.

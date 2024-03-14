@@ -18,7 +18,7 @@ import {
   useQuestionAnswer,
   useQuestionAnswerByConnectionId,
   useQuestionAnswerById
-} from '@aries-framework/react-hooks'
+} from '@credo-ts/react-hooks'
 
 export {
   useBasicMessages,
