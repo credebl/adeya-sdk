@@ -1,6 +1,6 @@
 {
   "name": "@adeya/ssi",
-  "version": "0.0.1-alpha.23",
+  "version": "0.0.1-alpha.24",
   "license": "Apache-2.0",
   "main": "build/index",
   "source": "src/index",
