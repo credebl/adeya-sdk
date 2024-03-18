@@ -81,7 +81,9 @@ import {
   TypedArrayEncoder,
   DifPresentationExchangeProofFormatService,
   JsonTransformer,
-  ClaimFormat
+  ClaimFormat,
+  CacheModule,
+  SingleContextStorageLruCache
 } from '@credo-ts/core'
 import {
   GetCredentialsForRequestReturn,
@@ -169,7 +171,9 @@ export {
   TypedArrayEncoder,
   DifPresentationExchangeProofFormatService,
   JsonTransformer,
-  ClaimFormat
+  ClaimFormat,
+  CacheModule,
+  SingleContextStorageLruCache
 }
 // Anoncreds
 export {
