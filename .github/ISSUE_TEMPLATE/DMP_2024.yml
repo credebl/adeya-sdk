@@ -1,7 +1,7 @@
 name: DMP 2024 Project Template
 description: List a new project for Dedicated Mentoring Program (DMP) 2024
-title: "[DMP 2024]: "
-labels: ["DMP 2024"]
+title: '[DMP 2024]: '
+labels: ['DMP 2024']
 body:
   - type: textarea
     id: ticket-description
@@ -119,7 +119,6 @@ body:
         - Identity & Digital Credentialing
     validations:
       required: true
-
 
   - type: dropdown
     id: ticket-technical-skills-required
@@ -263,4 +262,3 @@ body:
         - Other
     validations:
       required: true
-
