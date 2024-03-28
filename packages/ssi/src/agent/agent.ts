@@ -6,6 +6,7 @@ import {
   AnonCredsCredentialFormatService,
   AnonCredsModule,
   AnonCredsProofFormatService,
+  DataIntegrityCredentialFormatService,
   LegacyIndyCredentialFormatService,
   LegacyIndyProofFormatService,
   V1CredentialProtocol,
@@ -77,6 +78,7 @@ export const getAgentModules = (
           credentialFormats: [
             new LegacyIndyCredentialFormatService(),
             new AnonCredsCredentialFormatService(),
+            new DataIntegrityCredentialFormatService(),
             new JsonLdCredentialFormatService()
           ]
         })

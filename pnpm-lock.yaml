@@ -66,29 +66,29 @@ importers:
   packages/ssi:
     dependencies:
       '@credo-ts/anoncreds':
-        specifier: 0.5.0
-        version: 0.5.0(@hyperledger/anoncreds-shared@0.2.1)(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.5.1
+        version: 0.5.1(@hyperledger/anoncreds-shared@0.2.1)(expo@49.0.13)(react-native@0.71.13)
       '@credo-ts/askar':
-        specifier: 0.5.0
-        version: 0.5.0(@hyperledger/aries-askar-shared@0.2.0)(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.5.1
+        version: 0.5.1(@hyperledger/aries-askar-shared@0.2.0)(expo@49.0.13)(react-native@0.71.13)
       '@credo-ts/core':
-        specifier: 0.5.0
-        version: 0.5.0(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.5.1
+        version: 0.5.1(expo@49.0.13)(react-native@0.71.13)
       '@credo-ts/indy-vdr':
-        specifier: 0.5.0
-        version: 0.5.0(@hyperledger/anoncreds-shared@0.2.1)(@hyperledger/indy-vdr-shared@0.2.0)(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.5.1
+        version: 0.5.1(@hyperledger/anoncreds-shared@0.2.1)(@hyperledger/indy-vdr-shared@0.2.0)(expo@49.0.13)(react-native@0.71.13)
       '@credo-ts/push-notifications':
         specifier: 0.7.0
-        version: 0.7.0(@credo-ts/core@0.5.0)
+        version: 0.7.0(@credo-ts/core@0.5.1)
       '@credo-ts/question-answer':
-        specifier: 0.5.0
-        version: 0.5.0(expo@49.0.13)(react-native@0.71.13)
+        specifier: 0.5.1
+        version: 0.5.1(expo@49.0.13)(react-native@0.71.13)
       '@credo-ts/react-hooks':
         specifier: 0.6.0
-        version: 0.6.0(@credo-ts/core@0.5.0)(@credo-ts/question-answer@0.5.0)(react@18.2.0)
+        version: 0.6.0(@credo-ts/core@0.5.1)(@credo-ts/question-answer@0.5.1)(react@18.2.0)
       '@credo-ts/react-native':
-        specifier: 0.5.0
-        version: 0.5.0(expo@49.0.13)(react-native-fs@2.20.0)(react-native-get-random-values@1.9.0)(react-native@0.71.13)
+        specifier: 0.5.1
+        version: 0.5.1(expo@49.0.13)(react-native-fs@2.20.0)(react-native-get-random-values@1.9.0)(react-native@0.71.13)
       '@hyperledger/anoncreds-react-native':
         specifier: 0.2.1
         version: 0.2.1(react-native@0.71.13)(react@18.2.0)
@@ -1581,13 +1581,13 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@credo-ts/anoncreds@0.5.0(@hyperledger/anoncreds-shared@0.2.1)(expo@49.0.13)(react-native@0.71.13):
-    resolution: {integrity: sha512-fYPYxGV2S99dTCb0LHcHnJrVL3FLgrON5tFiv6U7By6aR9paT70Gwep/Lyp0WNzssg2vZ+a4gEf2gKjQiBE8pA==}
+  /@credo-ts/anoncreds@0.5.1(@hyperledger/anoncreds-shared@0.2.1)(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-d97wELxvt7jOqgr21FOVfFqHFSu487L+qF0QObOVCl9xElsST9sYl1iaRPHHW2GzYUMWLlnSwZm8fN4pLo9UVA==}
     peerDependencies:
       '@hyperledger/anoncreds-shared': ^0.2.1
     dependencies:
       '@astronautlabs/jsonpath': 1.1.2
-      '@credo-ts/core': 0.5.0(expo@49.0.13)(react-native@0.71.13)
+      '@credo-ts/core': 0.5.1(expo@49.0.13)(react-native@0.71.13)
       '@hyperledger/anoncreds-shared': 0.2.1
       big-integer: 1.6.51
       bn.js: 5.2.1
@@ -1603,12 +1603,12 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@credo-ts/askar@0.5.0(@hyperledger/aries-askar-shared@0.2.0)(expo@49.0.13)(react-native@0.71.13):
-    resolution: {integrity: sha512-84wxDU6GbucBTe4HV7gUbCieFdhXVX19q8o6dNK8a3zl87yiV3OVwPwtnzghjh47vv14Xr+gWRvqbRvZrhRsaA==}
+  /@credo-ts/askar@0.5.1(@hyperledger/aries-askar-shared@0.2.0)(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-O3XWnmpnEe5U/a0kGQHigzXPw6/SXKp2v4ob3DJdHA0kiK3DywANNeG/Hw44lxdg24nNpizmVlO5EjRa6ULcmw==}
     peerDependencies:
       '@hyperledger/aries-askar-shared': ^0.2.0
     dependencies:
-      '@credo-ts/core': 0.5.0(expo@49.0.13)(react-native@0.71.13)
+      '@credo-ts/core': 0.5.1(expo@49.0.13)(react-native@0.71.13)
       '@hyperledger/aries-askar-shared': 0.2.0
       bn.js: 5.2.1
       class-transformer: 0.5.1
@@ -1624,8 +1624,8 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@credo-ts/core@0.5.0(expo@49.0.13)(react-native@0.71.13):
-    resolution: {integrity: sha512-7SJBgs1yd2gpwv8BnCO+U63Uu06v6Cxzg+ypWpqyNkkG4nTsQZSI8r0oSQ+DgbiqwN/AZKsn9HuNISFftf5yKQ==}
+  /@credo-ts/core@0.5.1(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-ywwFw6wwiMft3A994Y91LAm8CrEg2G7CJQRyLD8UzneU4coMWZTeED63thAEX6XK/tyDmv2MAcrO04hE3KQPcA==}
     dependencies:
       '@digitalcredentials/jsonld': 6.0.0(expo@49.0.13)(react-native@0.71.13)
       '@digitalcredentials/jsonld-signatures': 9.4.0(expo@49.0.13)(react-native@0.71.13)
@@ -1667,13 +1667,13 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@credo-ts/indy-vdr@0.5.0(@hyperledger/anoncreds-shared@0.2.1)(@hyperledger/indy-vdr-shared@0.2.0)(expo@49.0.13)(react-native@0.71.13):
-    resolution: {integrity: sha512-hW7xDdL6fVIgTIclmJRfVz3mlpo87Cwk6hCiRY1/lWV62bsKs6RHGLv6RUp+WPwTIpPpbBs6T1Dm85ditBbxpA==}
+  /@credo-ts/indy-vdr@0.5.1(@hyperledger/anoncreds-shared@0.2.1)(@hyperledger/indy-vdr-shared@0.2.0)(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-pXRAKzLlwijaNaCOPheV9dHeZm0FAfiJw9kYEvpjBn+d/ARygb92kr9lJizUGK3cPtF9dbhrNBuLWwskM39fCw==}
     peerDependencies:
       '@hyperledger/indy-vdr-shared': ^0.2.0
     dependencies:
-      '@credo-ts/anoncreds': 0.5.0(@hyperledger/anoncreds-shared@0.2.1)(expo@49.0.13)(react-native@0.71.13)
-      '@credo-ts/core': 0.5.0(expo@49.0.13)(react-native@0.71.13)
+      '@credo-ts/anoncreds': 0.5.1(@hyperledger/anoncreds-shared@0.2.1)(expo@49.0.13)(react-native@0.71.13)
+      '@credo-ts/core': 0.5.1(expo@49.0.13)(react-native@0.71.13)
       '@hyperledger/indy-vdr-shared': 0.2.0
     transitivePeerDependencies:
       - '@hyperledger/anoncreds-shared'
@@ -1685,21 +1685,21 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@credo-ts/push-notifications@0.7.0(@credo-ts/core@0.5.0):
+  /@credo-ts/push-notifications@0.7.0(@credo-ts/core@0.5.1):
     resolution: {integrity: sha512-3A+IOsK9u6aM2xsRJkEtsKRi4EbdPAEwEJ3vqkmV6jXT2SRGAGu2O4UThmZmS7YlRgkC4N+tMaDHerRBNz7nYA==}
     peerDependencies:
       '@credo-ts/core': ^0.5.0
     dependencies:
-      '@credo-ts/core': 0.5.0(expo@49.0.13)(react-native@0.71.13)
+      '@credo-ts/core': 0.5.1(expo@49.0.13)(react-native@0.71.13)
       class-transformer: 0.5.1
       class-validator: 0.14.1
       tsyringe: 4.8.0
     dev: false
 
-  /@credo-ts/question-answer@0.5.0(expo@49.0.13)(react-native@0.71.13):
-    resolution: {integrity: sha512-cF4RRoVIS05ssIMk4iNQcn53k5E3G4jHVTSrBr3ZoV5EAGHTQ0Y5NMlLCx7kLlY31KGvhdiPXxeECG/uSiS3sg==}
+  /@credo-ts/question-answer@0.5.1(expo@49.0.13)(react-native@0.71.13):
+    resolution: {integrity: sha512-yPjOl3tUfK5GT9BvX70hiTq86Fi5WTxB0pL42e17evq7+puBOMqhwQ1nv7dhDSWC2Oy+r0D0mF7Lz2hGulrJJg==}
     dependencies:
-      '@credo-ts/core': 0.5.0(expo@49.0.13)(react-native@0.71.13)
+      '@credo-ts/core': 0.5.1(expo@49.0.13)(react-native@0.71.13)
       class-transformer: 0.5.1
       class-validator: 0.14.1
       rxjs: 7.8.1
@@ -1712,28 +1712,28 @@ packages:
       - web-streams-polyfill
     dev: false
 
-  /@credo-ts/react-hooks@0.6.0(@credo-ts/core@0.5.0)(@credo-ts/question-answer@0.5.0)(react@18.2.0):
+  /@credo-ts/react-hooks@0.6.0(@credo-ts/core@0.5.1)(@credo-ts/question-answer@0.5.1)(react@18.2.0):
     resolution: {integrity: sha512-e/S0+tn+fao5EYMq631JTKnclqHe27omRS4GNGLk1XoQTmJb58UP+j1bs1AAw1IZHmG9SDBSGTmQbV0/BdqmKA==}
     peerDependencies:
       '@credo-ts/core': ^0.5.0
       '@credo-ts/question-answer': ^0.5.0
       react: '>=17.0.0 <19.0.0'
     dependencies:
-      '@credo-ts/core': 0.5.0(expo@49.0.13)(react-native@0.71.13)
-      '@credo-ts/question-answer': 0.5.0(expo@49.0.13)(react-native@0.71.13)
+      '@credo-ts/core': 0.5.1(expo@49.0.13)(react-native@0.71.13)
+      '@credo-ts/question-answer': 0.5.1(expo@49.0.13)(react-native@0.71.13)
       react: 18.2.0
       rxjs: 7.8.1
     dev: false
 
-  /@credo-ts/react-native@0.5.0(expo@49.0.13)(react-native-fs@2.20.0)(react-native-get-random-values@1.9.0)(react-native@0.71.13):
-    resolution: {integrity: sha512-7UEdWlpSNteWwZk4u2u6/ZnhwvmLk1EJ/gdYyD6CvuDqSbVmlf6zJY9XcdhaVgLsZfnAsNOLCMG1g4MgOXCOyw==}
+  /@credo-ts/react-native@0.5.1(expo@49.0.13)(react-native-fs@2.20.0)(react-native-get-random-values@1.9.0)(react-native@0.71.13):
+    resolution: {integrity: sha512-Blfivm+BAKioiZiRVXlW+Z+C6o8JSMizx18q7GryxpYBuYNK/7o3EHDJUjzWyqixG7KGTmYU3td9mP7kJwoTWA==}
     peerDependencies:
       react-native: '>=0.71.4'
       react-native-fs: ^2.20.0
       react-native-get-random-values: ^1.8.0
     dependencies:
       '@azure/core-asynciterator-polyfill': 1.0.2
-      '@credo-ts/core': 0.5.0(expo@49.0.13)(react-native@0.71.13)
+      '@credo-ts/core': 0.5.1(expo@49.0.13)(react-native@0.71.13)
       events: 3.3.0
       react-native: 0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
       react-native-fs: 2.20.0(react-native@0.71.13)
@@ -3531,6 +3531,7 @@ packages:
     resolution: {integrity: sha512-eghAz3gnbQbvnHqB+mgB2ZR3aH6RhdEmHGS48BnV75KceQPHqabkxKI0BbUSsqhqy2Ddhc2xD/VAR9ySZd57Lw==}
     dependencies:
       undici-types: 5.26.5
+    dev: true
 
   /@types/node@20.7.0:
     resolution: {integrity: sha512-zI22/pJW2wUZOVyguFaUL1HABdmSVxpXrzIqkjsHmyUjNhPoWM1CKfvVuXfetHhIok4RY573cqS0mZ1SJEnoTg==}
@@ -3565,7 +3566,7 @@ packages:
   /@types/ws@8.5.6:
     resolution: {integrity: sha512-8B5EO9jLVCy+B58PLHvLDuOD8DRVMgQzq8d55SjLCOn9kqGyqOvy27exVaTio1q1nX5zLu8/6N0n2ThSxOM6tg==}
     dependencies:
-      '@types/node': 18.19.24
+      '@types/node': 20.7.0
     dev: false
 
   /@types/yargs-parser@21.0.1:
@@ -11472,6 +11473,7 @@ packages:
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
 
   /undici@5.28.3:
     resolution: {integrity: sha512-3ItfzbrhDlINjaP0duwnNsKpDQk3acHI3gVJ1z4fmwMK31k5G9OVIAMLSIaP6w4FaGkaAkN6zaQO9LUvZ1t7VA==}
