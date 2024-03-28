@@ -1,6 +1,6 @@
 {
   "name": "@adeya/ssi",
-  "version": "0.0.1-alpha.22",
+  "version": "0.0.1-alpha.25",
   "license": "Apache-2.0",
   "main": "build/index",
   "source": "src/index",
@@ -24,22 +24,22 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@aries-framework/anoncreds": "0.4.2",
-    "@aries-framework/anoncreds-rs": "0.4.2",
-    "@aries-framework/askar": "0.4.2",
-    "@aries-framework/core": "0.4.2",
-    "@aries-framework/indy-vdr": "0.4.2",
-    "@aries-framework/push-notifications": "^0.6.0",
-    "@aries-framework/question-answer": "0.4.2",
-    "@aries-framework/react-hooks": "0.5.0",
-    "@aries-framework/react-native": "0.4.2"
+    "@credo-ts/anoncreds": "0.5.1",
+    "@credo-ts/askar": "0.5.1",
+    "@credo-ts/core": "0.5.1",
+    "@credo-ts/indy-vdr": "0.5.1",
+    "@credo-ts/push-notifications": "0.7.0",
+    "@credo-ts/question-answer": "0.5.1",
+    "@credo-ts/react-hooks": "0.6.0",
+    "@credo-ts/react-native": "0.5.1"
   },
   "peerDependencies": {
-    "@hyperledger/anoncreds-react-native": "^0.1.0",
-    "@hyperledger/aries-askar-react-native": "^0.1.1",
-    "@hyperledger/indy-vdr-react-native": "^0.1.0"
+    "@hyperledger/anoncreds-react-native": "0.2.1",
+    "@hyperledger/aries-askar-react-native": "0.2.0",
+    "@hyperledger/indy-vdr-react-native": "0.2.0"
   },
   "devDependencies": {
+    "@types/node": "^18.18.8",
     "@types/react": "^18.0.24",
     "rimraf": "3.0.2",
     "typescript": "~5.2.2"

@@ -1,7 +1,7 @@
-import type { Agent } from '@aries-framework/core'
-import type { AgentModulesInput } from '@aries-framework/core/build/agent/AgentModules'
+import type { Agent } from '@credo-ts/core'
+import type { AgentModulesInput } from '@credo-ts/core/build/agent/AgentModules'
 
-import AgentProvider, { useAgent } from '@aries-framework/react-hooks'
+import AgentProvider, { useAgent } from '@credo-ts/react-hooks'
 
 const useAdeyaAgent: <AgentModules extends AgentModulesInput = AgentModulesInput>() => {
   loading: boolean

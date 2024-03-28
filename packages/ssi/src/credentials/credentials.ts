@@ -6,7 +6,7 @@ import type {
   DeleteCredentialOptions,
   ProposeCredentialOptions,
   SendCredentialProblemReportOptions
-} from '@aries-framework/core'
+} from '@credo-ts/core'
 
 /**
  * Retrieves all credential exchange records from the agent.

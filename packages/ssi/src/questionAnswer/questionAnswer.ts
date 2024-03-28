@@ -1,5 +1,5 @@
-import type { Agent, Query } from '@aries-framework/core'
-import type { QuestionAnswerRecord, ValidResponse } from '@aries-framework/question-answer'
+import type { Agent, Query } from '@credo-ts/core'
+import type { QuestionAnswerRecord, ValidResponse } from '@credo-ts/question-answer'
 
 export type SendQuestionConfig = {
   question: string
