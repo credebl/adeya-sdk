@@ -1,8 +1,8 @@
-import type { InitConfig } from '@aries-framework/core'
+import type { InitConfig } from '@credo-ts/core'
 import type {
   GenericRecord,
   SaveGenericRecordOption
-} from '@aries-framework/core/build/modules/generic-records/repository/GenericRecord'
+} from '@credo-ts/core/build/modules/generic-records/repository/GenericRecord'
 
 // Anoncreds
 import {
@@ -29,11 +29,10 @@ import {
   AnonCredsCredentialFormatService,
   V1ProofProtocol,
   AnonCredsCredentialInfo
-} from '@aries-framework/anoncreds'
-import { AnonCredsCredentialMetadataKey } from '@aries-framework/anoncreds/build/utils/metadata'
+} from '@credo-ts/anoncreds'
+import { AnonCredsCredentialMetadataKey } from '@credo-ts/anoncreds/build/utils/metadata'
 // Core
-import { AnonCredsRsModule } from '@aries-framework/anoncreds-rs'
-import { AskarModule } from '@aries-framework/askar'
+import { AskarModule } from '@credo-ts/askar'
 import {
   LogLevel,
   ConsoleLogger,
@@ -70,7 +69,7 @@ import {
   ConnectionsModule,
   Agent,
   BasicMessageRepository,
-  AriesFrameworkError,
+  CredoError,
   ConnectionStateChangedEvent,
   CredentialStateChangedEvent,
   ProofStateChangedEvent,
@@ -78,12 +77,18 @@ import {
   CredentialEventTypes,
   ProofEventTypes,
   Query,
-  utils
-} from '@aries-framework/core'
+  utils,
+  TypedArrayEncoder,
+  DifPresentationExchangeProofFormatService,
+  JsonTransformer,
+  ClaimFormat,
+  CacheModule,
+  SingleContextStorageLruCache
+} from '@credo-ts/core'
 import {
   GetCredentialsForRequestReturn,
   ProofFormatDataMessagePayload
-} from '@aries-framework/core/build/modules/proofs/protocol/ProofProtocolOptions'
+} from '@credo-ts/core/build/modules/proofs/protocol/ProofProtocolOptions'
 // Indy VDR
 import {
   IndyVdrAnonCredsRegistry,
@@ -91,15 +96,15 @@ import {
   IndyVdrModule,
   IndyVdrPoolConfig,
   IndyVdrSovDidResolver
-} from '@aries-framework/indy-vdr'
-import { PushNotificationsFcmModule } from '@aries-framework/push-notifications'
+} from '@credo-ts/indy-vdr'
+import { PushNotificationsFcmModule } from '@credo-ts/push-notifications'
 // Q&A
 import {
   QuestionAnswerRecord,
   QuestionAnswerEventTypes,
   QuestionAnswerStateChangedEvent,
   QuestionAnswerState
-} from '@aries-framework/question-answer'
+} from '@credo-ts/question-answer'
 
 export * from './agent'
 export * from './providers'
@@ -112,6 +117,7 @@ export * from './basicMessages'
 export * from './pushNotifications'
 export * from './genericRecords'
 export * from './questionAnswer'
+export * from './w3cCredentials'
 // Core
 export {
   LogLevel,
@@ -152,7 +158,7 @@ export {
   ConnectionsModule,
   Agent,
   BasicMessageRepository,
-  AriesFrameworkError,
+  CredoError,
   ConnectionStateChangedEvent,
   CredentialStateChangedEvent,
   ProofStateChangedEvent,
@@ -162,7 +168,13 @@ export {
   GenericRecord,
   SaveGenericRecordOption,
   Query,
-  utils
+  utils,
+  TypedArrayEncoder,
+  DifPresentationExchangeProofFormatService,
+  JsonTransformer,
+  ClaimFormat,
+  CacheModule,
+  SingleContextStorageLruCache
 }
 // Anoncreds
 export {
@@ -195,8 +207,6 @@ export {
 export { IndyVdrAnonCredsRegistry, IndyVdrPoolConfig, IndyVdrIndyDidResolver, IndyVdrModule, IndyVdrSovDidResolver }
 // Askar
 export { AskarModule }
-// Anoncreds RS
-export { AnonCredsRsModule }
 // Push Notifications
 export { PushNotificationsFcmModule }
 // Q&A

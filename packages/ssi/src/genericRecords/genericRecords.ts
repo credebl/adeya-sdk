@@ -1,8 +1,8 @@
-import type { Agent, Query } from '@aries-framework/core'
+import type { Agent, Query } from '@credo-ts/core'
 import type {
   GenericRecord,
   SaveGenericRecordOption
-} from '@aries-framework/core/build/modules/generic-records/repository/GenericRecord'
+} from '@credo-ts/core/build/modules/generic-records/repository/GenericRecord'
 
 /**
  * Retrieves all credential exchange records from the agent.

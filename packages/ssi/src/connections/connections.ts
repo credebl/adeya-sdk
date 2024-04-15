@@ -7,7 +7,7 @@ import type {
   OutOfBandInvitation,
   ReceiveOutOfBandInvitationConfig,
   Routing
-} from '@aries-framework/core'
+} from '@credo-ts/core'
 
 /**
  * Creates an invitation with RFC 0160: Connection Protocol and returns it together with out-of-band record and invitationUrl.

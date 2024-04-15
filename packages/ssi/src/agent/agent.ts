@@ -1,21 +1,19 @@
-import type { InitConfig } from '@aries-framework/core'
-import type { AgentModulesInput } from '@aries-framework/core/build/agent/AgentModules'
-import type { IndyVdrPoolConfig } from '@aries-framework/indy-vdr'
+import type { InitConfig } from '@credo-ts/core'
+import type { AgentModulesInput } from '@credo-ts/core/build/agent/AgentModules'
+import type { IndyVdrPoolConfig } from '@credo-ts/indy-vdr'
 
 import {
   AnonCredsCredentialFormatService,
   AnonCredsModule,
   AnonCredsProofFormatService,
+  DataIntegrityCredentialFormatService,
   LegacyIndyCredentialFormatService,
   LegacyIndyProofFormatService,
   V1CredentialProtocol,
   V1ProofProtocol
-} from '@aries-framework/anoncreds'
-import { AnonCredsRsModule } from '@aries-framework/anoncreds-rs'
-import { AskarModule } from '@aries-framework/askar'
+} from '@credo-ts/anoncreds'
+import { AskarModule } from '@credo-ts/askar'
 import {
-  JwkDidRegistrar,
-  JwkDidResolver,
   Agent,
   DidsModule,
   WebDidResolver,
@@ -30,17 +28,18 @@ import {
   WsOutboundTransport,
   ConnectionsModule,
   MediatorPickupStrategy,
-  JsonLdCredentialFormatService
-} from '@aries-framework/core'
+  JsonLdCredentialFormatService,
+  DifPresentationExchangeProofFormatService
+} from '@credo-ts/core'
 import {
   IndyVdrAnonCredsRegistry,
   IndyVdrIndyDidResolver,
   IndyVdrModule,
   IndyVdrSovDidResolver
-} from '@aries-framework/indy-vdr'
-import { PushNotificationsFcmModule } from '@aries-framework/push-notifications'
-import { QuestionAnswerModule } from '@aries-framework/question-answer'
-import { agentDependencies } from '@aries-framework/react-native'
+} from '@credo-ts/indy-vdr'
+import { PushNotificationsFcmModule } from '@credo-ts/push-notifications'
+import { QuestionAnswerModule } from '@credo-ts/question-answer'
+import { agentDependencies } from '@credo-ts/react-native'
 import { anoncreds } from '@hyperledger/anoncreds-react-native'
 import { ariesAskar } from '@hyperledger/aries-askar-react-native'
 import { indyVdr } from '@hyperledger/indy-vdr-react-native'
@@ -53,19 +52,17 @@ export const getAgentModules = (
     askar: new AskarModule({
       ariesAskar
     }),
-    anoncredsRs: new AnonCredsRsModule({
-      anoncreds
-    }),
     anoncreds: new AnonCredsModule({
-      registries: [new IndyVdrAnonCredsRegistry()]
+      registries: [new IndyVdrAnonCredsRegistry()],
+      anoncreds
     }),
     mediationRecipient: new MediationRecipientModule({
       mediatorPickupStrategy: MediatorPickupStrategy.PickUpV2,
       mediatorInvitationUrl: mediatorInvitationUrl
     }),
     dids: new DidsModule({
-      registrars: [new JwkDidRegistrar()],
-      resolvers: [new WebDidResolver(), new JwkDidResolver(), new IndyVdrSovDidResolver(), new IndyVdrIndyDidResolver()]
+      registrars: [],
+      resolvers: [new WebDidResolver(), new IndyVdrSovDidResolver(), new IndyVdrIndyDidResolver()]
     }),
     indyVdr: new IndyVdrModule({
       indyVdr,
@@ -81,6 +78,7 @@ export const getAgentModules = (
           credentialFormats: [
             new LegacyIndyCredentialFormatService(),
             new AnonCredsCredentialFormatService(),
+            new DataIntegrityCredentialFormatService(),
             new JsonLdCredentialFormatService()
           ]
         })
@@ -93,7 +91,11 @@ export const getAgentModules = (
           indyProofFormat: new LegacyIndyProofFormatService()
         }),
         new V2ProofProtocol({
-          proofFormats: [new LegacyIndyProofFormatService(), new AnonCredsProofFormatService()]
+          proofFormats: [
+            new LegacyIndyProofFormatService(),
+            new AnonCredsProofFormatService(),
+            new DifPresentationExchangeProofFormatService()
+          ]
         })
       ]
     }),
