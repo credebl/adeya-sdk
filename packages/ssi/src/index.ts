@@ -117,6 +117,7 @@ export * from './basicMessages'
 export * from './pushNotifications'
 export * from './genericRecords'
 export * from './questionAnswer'
+export * from './w3cCredentials'
 // Core
 export {
   LogLevel,
