@@ -24,19 +24,19 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@credo-ts/anoncreds": "0.5.1",
-    "@credo-ts/askar": "0.5.1",
-    "@credo-ts/core": "0.5.1",
-    "@credo-ts/indy-vdr": "0.5.1",
+    "@credo-ts/anoncreds": "0.5.2",
+    "@credo-ts/askar": "0.5.2",
+    "@credo-ts/core": "0.5.2",
+    "@credo-ts/indy-vdr": "0.5.2",
     "@credo-ts/push-notifications": "0.7.0",
-    "@credo-ts/question-answer": "0.5.1",
+    "@credo-ts/question-answer": "0.5.2",
     "@credo-ts/react-hooks": "0.6.0",
-    "@credo-ts/react-native": "0.5.1"
+    "@credo-ts/react-native": "0.5.2"
   },
   "peerDependencies": {
-    "@hyperledger/anoncreds-react-native": "0.2.1",
-    "@hyperledger/aries-askar-react-native": "0.2.0",
-    "@hyperledger/indy-vdr-react-native": "0.2.0"
+    "@hyperledger/anoncreds-react-native": "0.2.2",
+    "@hyperledger/aries-askar-react-native": "0.2.1",
+    "@hyperledger/indy-vdr-react-native": "0.2.2"
   },
   "devDependencies": {
     "@types/node": "^18.18.8",

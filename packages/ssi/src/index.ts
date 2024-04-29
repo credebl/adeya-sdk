@@ -83,7 +83,12 @@ import {
   JsonTransformer,
   ClaimFormat,
   CacheModule,
-  SingleContextStorageLruCache
+  SingleContextStorageLruCache,
+  DidRepository,
+  KeyType,
+  DidRecord,
+  W3cJsonLdVerifiableCredential,
+  DifPexCredentialsForRequest
 } from '@credo-ts/core'
 import {
   GetCredentialsForRequestReturn,
@@ -174,7 +179,12 @@ export {
   JsonTransformer,
   ClaimFormat,
   CacheModule,
-  SingleContextStorageLruCache
+  SingleContextStorageLruCache,
+  DidRepository,
+  KeyType,
+  DidRecord,
+  W3cJsonLdVerifiableCredential,
+  DifPexCredentialsForRequest
 }
 // Anoncreds
 export {
