@@ -57,7 +57,7 @@ export const getAgentModules = (
       anoncreds
     }),
     mediationRecipient: new MediationRecipientModule({
-      mediatorPickupStrategy: MediatorPickupStrategy.PickUpV2,
+      mediatorPickupStrategy: MediatorPickupStrategy.Implicit,
       mediatorInvitationUrl: mediatorInvitationUrl
     }),
     dids: new DidsModule({

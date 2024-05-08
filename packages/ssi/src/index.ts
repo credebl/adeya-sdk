@@ -88,7 +88,8 @@ import {
   KeyType,
   DidRecord,
   W3cJsonLdVerifiableCredential,
-  DifPexCredentialsForRequest
+  DifPexCredentialsForRequest,
+  DidDocument
 } from '@credo-ts/core'
 import {
   GetCredentialsForRequestReturn,
@@ -184,7 +185,8 @@ export {
   KeyType,
   DidRecord,
   W3cJsonLdVerifiableCredential,
-  DifPexCredentialsForRequest
+  DifPexCredentialsForRequest,
+  DidDocument
 }
 // Anoncreds
 export {
