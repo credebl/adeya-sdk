@@ -34,11 +34,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
         with:
-          version: 8.6.0
+          version: 9.0.6
 
       - name: Install dependencies
         run: pnpm install
@@ -60,13 +60,13 @@ jobs:
     needs: ['continuous-integration']
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
         with:
-          version: 8.6.0
+          version: 9.0.6
 
       - name: Install dependencies
         run: pnpm install
