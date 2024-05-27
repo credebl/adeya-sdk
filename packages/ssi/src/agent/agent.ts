@@ -1,4 +1,4 @@
-import type { InitConfig } from '@credo-ts/core'
+import type { InitConfig, MediatorPickupStrategy } from '@credo-ts/core'
 import type { AgentModulesInput } from '@credo-ts/core/build/agent/AgentModules'
 import type { IndyVdrPoolConfig } from '@credo-ts/indy-vdr'
 
@@ -27,7 +27,6 @@ import {
   HttpOutboundTransport,
   WsOutboundTransport,
   ConnectionsModule,
-  MediatorPickupStrategy,
   JsonLdCredentialFormatService,
   DifPresentationExchangeProofFormatService
 } from '@credo-ts/core'
@@ -44,10 +43,19 @@ import { anoncreds } from '@hyperledger/anoncreds-react-native'
 import { ariesAskar } from '@hyperledger/aries-askar-react-native'
 import { indyVdr } from '@hyperledger/indy-vdr-react-native'
 
-export const getAgentModules = (
-  mediatorInvitationUrl: string,
+export type AdeyaAgentModuleOptions = {
+  mediatorInvitationUrl: string
+  mediatorPickupStrategy: MediatorPickupStrategy
   indyNetworks: [IndyVdrPoolConfig, ...IndyVdrPoolConfig[]]
-) => {
+  maximumMessagePickup?: number
+}
+
+export const getAgentModules = ({
+  mediatorInvitationUrl,
+  mediatorPickupStrategy,
+  indyNetworks,
+  maximumMessagePickup = 5
+}: AdeyaAgentModuleOptions) => {
   return {
     askar: new AskarModule({
       ariesAskar
@@ -57,8 +65,9 @@ export const getAgentModules = (
       anoncreds
     }),
     mediationRecipient: new MediationRecipientModule({
-      mediatorPickupStrategy: MediatorPickupStrategy.Implicit,
-      mediatorInvitationUrl: mediatorInvitationUrl
+      mediatorInvitationUrl,
+      mediatorPickupStrategy,
+      maximumMessagePickup
     }),
     dids: new DidsModule({
       registrars: [],
