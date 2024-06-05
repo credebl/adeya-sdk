@@ -89,7 +89,10 @@ import {
   DidRecord,
   W3cJsonLdVerifiableCredential,
   DifPexCredentialsForRequest,
-  DidDocument
+  DidDocument,
+  KeyDidCreateOptions,
+  PeerDidCreateOptions,
+  JwkDidCreateOptions
 } from '@credo-ts/core'
 import {
   GetCredentialsForRequestReturn,
@@ -124,6 +127,7 @@ export * from './pushNotifications'
 export * from './genericRecords'
 export * from './questionAnswer'
 export * from './w3cCredentials'
+export * from './dids'
 // Core
 export {
   LogLevel,
@@ -186,7 +190,10 @@ export {
   DidRecord,
   W3cJsonLdVerifiableCredential,
   DifPexCredentialsForRequest,
-  DidDocument
+  DidDocument,
+  KeyDidCreateOptions,
+  PeerDidCreateOptions,
+  JwkDidCreateOptions
 }
 // Anoncreds
 export {
