@@ -37,7 +37,7 @@ importers:
         version: 3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0)
       eslint-plugin-import:
         specifier: ^2.28.1
-        version: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0)
+        version: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0)
       eslint-plugin-prettier:
         specifier: ^5.0.0
         version: 5.0.0(@types/eslint@8.44.3)(eslint-config-prettier@9.0.0(eslint@8.50.0))(eslint@8.50.0)(prettier@3.0.3)
@@ -66,29 +66,29 @@ importers:
   packages/ssi:
     dependencies:
       '@credo-ts/anoncreds':
-        specifier: 0.5.3
-        version: 0.5.3(@hyperledger/anoncreds-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+        specifier: 0.5.5
+        version: 0.5.5(@hyperledger/anoncreds-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@credo-ts/askar':
-        specifier: 0.5.3
-        version: 0.5.3(@hyperledger/aries-askar-shared@0.2.1)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+        specifier: 0.5.5
+        version: 0.5.5(@hyperledger/aries-askar-shared@0.2.1)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@credo-ts/core':
-        specifier: 0.5.3
-        version: 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+        specifier: 0.5.5
+        version: 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@credo-ts/indy-vdr':
-        specifier: 0.5.3
-        version: 0.5.3(@hyperledger/anoncreds-shared@0.2.2)(@hyperledger/indy-vdr-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+        specifier: 0.5.5
+        version: 0.5.5(@hyperledger/anoncreds-shared@0.2.2)(@hyperledger/indy-vdr-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@credo-ts/push-notifications':
         specifier: 0.7.0
-        version: 0.7.0(@credo-ts/core@0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))
+        version: 0.7.0(@credo-ts/core@0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))
       '@credo-ts/question-answer':
-        specifier: 0.5.3
-        version: 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+        specifier: 0.5.5
+        version: 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@credo-ts/react-hooks':
         specifier: 0.6.0
-        version: 0.6.0(@credo-ts/core@0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))(@credo-ts/question-answer@0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))(react@18.2.0)
+        version: 0.6.0(@credo-ts/core@0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))(@credo-ts/question-answer@0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))(react@18.2.0)
       '@credo-ts/react-native':
-        specifier: 0.5.3
-        version: 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native-fs@2.20.0(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0)))(react-native-get-random-values@1.9.0(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0)))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+        specifier: 0.5.5
+        version: 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native-fs@2.20.0(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0)))(react-native-get-random-values@1.9.0(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0)))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@hyperledger/anoncreds-react-native':
         specifier: 0.2.2
         version: 0.2.2(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(react@18.2.0)
@@ -862,21 +862,21 @@ packages:
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
-  '@credo-ts/anoncreds@0.5.3':
-    resolution: {integrity: sha512-NXkmbBnWEHnzorbXJ/4VlDZtdz9LrDfojPqX0ZZNIfGiV7K8/uuFHjr8LIPbzjfIsJiaL9VSxnoejHFkTOoilQ==}
+  '@credo-ts/anoncreds@0.5.5':
+    resolution: {integrity: sha512-Hqx4YhYdauF5WQXnRO+8/uOOYVu4zZN1/vpYNT0xKbh4/AZB0NUDMkRJzBa0SUTTn4EKONIbpDWYxHShX/gt9w==}
     peerDependencies:
       '@hyperledger/anoncreds-shared': ^0.2.2
 
-  '@credo-ts/askar@0.5.3':
-    resolution: {integrity: sha512-AegnSygDAiY77cgidxNAb/ROeGtCNFo2L0nvxXs5MqBIGreT/+llslc5+/FIHDsDfUNB70Y/KK2qsLTVU3MtRg==}
+  '@credo-ts/askar@0.5.5':
+    resolution: {integrity: sha512-bYE3TyeuegpfXOXUKBWz1CWWjsL4XJb4CRS+vsrX4Hau2BTV77/27QF/TPgRRDsZCC4c9u3p015LV1JzFSyCcw==}
     peerDependencies:
       '@hyperledger/aries-askar-shared': ^0.2.1
 
-  '@credo-ts/core@0.5.3':
-    resolution: {integrity: sha512-bM9iNhhXWiJ4YdH5uqaIfK3XhZ6GjuzF0AwE1vMy586sZz05J1ZLQvIYzRpm/p3Buxj9rimnLrc4jcYNit0VUw==}
+  '@credo-ts/core@0.5.5':
+    resolution: {integrity: sha512-h8YFyu7o351nRlEwEDdAoZdwStJDg2dPZmaM9T7uFghROtZ2AXGwMx7WURswxfdhobozGfo9qQDJWue2twsI1A==}
 
-  '@credo-ts/indy-vdr@0.5.3':
-    resolution: {integrity: sha512-UjydimYomJ2wArr0qkXy21I3PK6859vs/y/BEeKgt4b1cI7hGBZ23+DSTfxHZdf/fLy4k0iu+cfFwx3VoNyAng==}
+  '@credo-ts/indy-vdr@0.5.5':
+    resolution: {integrity: sha512-zZRcEZ0EXgXxfGzh+x+T5kWfWxleixbUmtsWPigZQmE9yZXUCLAAsZUo33GpsqJ1B+IlAHb14/mj6GeOCOtN9A==}
     peerDependencies:
       '@hyperledger/indy-vdr-shared': ^0.2.2
 
@@ -885,8 +885,8 @@ packages:
     peerDependencies:
       '@credo-ts/core': ^0.5.0
 
-  '@credo-ts/question-answer@0.5.3':
-    resolution: {integrity: sha512-xdclXz08iDbQX5KnlBPbMNaVqYjdrnjJ8tq3KILnCbWzwSbxIF7Ab7T3E9g6DKYkb5zmVaMVTUQU41ocyYCsJQ==}
+  '@credo-ts/question-answer@0.5.5':
+    resolution: {integrity: sha512-OK2FdekIz5nSCPEkuBvq07pWN2sVbZnPV2WYuaRE9P/AMocPswotpTejsT66Mp4JCmeRD1WYxUjdOx4MDXkcgg==}
 
   '@credo-ts/react-hooks@0.6.0':
     resolution: {integrity: sha512-e/S0+tn+fao5EYMq631JTKnclqHe27omRS4GNGLk1XoQTmJb58UP+j1bs1AAw1IZHmG9SDBSGTmQbV0/BdqmKA==}
@@ -895,8 +895,8 @@ packages:
       '@credo-ts/question-answer': ^0.5.0
       react: '>=17.0.0 <19.0.0'
 
-  '@credo-ts/react-native@0.5.3':
-    resolution: {integrity: sha512-46b8R+8rYJQ/GuZHX2jFWRuc9E53pXG9vn1cftZ5H8+x0SYiOk0bQdQuNqvsYa52UK2wbA0eQh8e24hUp3yGAw==}
+  '@credo-ts/react-native@0.5.5':
+    resolution: {integrity: sha512-L8Q5aAhcuS6oYuFzpxKjDhtmD3AhOWSfzbfMLF31by1dfRdocoWXWWyd/IA3tnzTNd4jOwIca+iFBm76+5hmnw==}
     peerDependencies:
       react-native: '>=0.71.4'
       react-native-fs: ^2.20.0
@@ -1410,25 +1410,49 @@ packages:
   '@react-native/polyfills@2.0.0':
     resolution: {integrity: sha512-K0aGNn1TjalKj+65D7ycc1//H9roAQ51GJVk5ZJQFb2teECGmzd86bYDC0aYdbRf7gtovescq4Zt6FR0tgXiHQ==}
 
-  '@sd-jwt/core@0.6.1':
-    resolution: {integrity: sha512-egFTb23o6BGWF93vnjopN02rSiC1HOOnkk9BI8Kao3jz9ipZAHdO6wF7gwfZm5Nlol/Kd1/KSLhbOUPYt++FjA==}
-    engines: {node: '>=16'}
+  '@sd-jwt/core@0.7.1':
+    resolution: {integrity: sha512-7u7cNeYNYcNNgzDj+mSeHrloY/C44XsewdKzViMp+8jpQSi/TEeudM9CkR5wxx1KulvnGojHZfMygK8Arxey6g==}
+    engines: {node: '>=18'}
 
   '@sd-jwt/decode@0.6.1':
     resolution: {integrity: sha512-QgTIoYd5zyKKLgXB4xEYJTrvumVwtsj5Dog0v0L9UH9ZvHekDaeexS247X7A4iSdzTvmZzUpGskgABOa4D8NmQ==}
     engines: {node: '>=16'}
 
+  '@sd-jwt/decode@0.7.1':
+    resolution: {integrity: sha512-jPNjwb9S0PqNULLLl3qR0NPpK0UePpzjB57QJEjEeY9Bdws5N5uANvyr7bF/MG496B+XZE1AugvnBtk4SQguVA==}
+    engines: {node: '>=18'}
+
+  '@sd-jwt/jwt-status-list@0.7.1':
+    resolution: {integrity: sha512-HeLluuKrixoAkaHO7buFjPpRuFIjICNGgvT5f4mH06bwrzj7uZ5VNNUWPK9Nb1jq8vHnMpIhpbnSSAmoaVWPEA==}
+    engines: {node: '>=18'}
+
   '@sd-jwt/present@0.6.1':
     resolution: {integrity: sha512-QRD3TUDLj4PqQNZ70bBxh8FLLrOE9mY8V9qiZrJSsaDOLFs2p1CtZG+v9ig62fxFYJZMf4bWKwYjz+qqGAtxCg==}
     engines: {node: '>=16'}
+
+  '@sd-jwt/present@0.7.1':
+    resolution: {integrity: sha512-X8ADyHq2DUYRy0snd0KXe9G9vOY8MwsP/1YsmgScEFUXfJM6LFhVNiBGS5uzUr6BkFYz6sFZ6WAHrdhg459J5A==}
+    engines: {node: '>=18'}
+
+  '@sd-jwt/sd-jwt-vc@0.7.1':
+    resolution: {integrity: sha512-iwAFoxQJbRAzYlahai3YCUqGzHZea69fJI3ct38iJG7IVKxsgBRj6SdACyS1opDNdZSst7McBl4aWyokzGgRvA==}
+    engines: {node: '>=18'}
 
   '@sd-jwt/types@0.6.1':
     resolution: {integrity: sha512-LKpABZJGT77jNhOLvAHIkNNmGqXzyfwBT+6r+DN9zNzMx1CzuNR0qXk1GMUbast9iCfPkGbnEpUv/jHTBvlIvg==}
     engines: {node: '>=16'}
 
+  '@sd-jwt/types@0.7.1':
+    resolution: {integrity: sha512-rPXS+kWiDDznWUuRkvAeXTWOhYn2tb5dZLI3deepsXmofjhTGqMP89qNNNBqhnA99kJx9gxnUj/jpQgUm0MjmQ==}
+    engines: {node: '>=18'}
+
   '@sd-jwt/utils@0.6.1':
     resolution: {integrity: sha512-1NHZ//+GecGQJb+gSdDicnrHG0DvACUk9jTnXA5yLZhlRjgkjyfJLNsCZesYeCyVp/SiyvIC9B+JwoY4kI0TwQ==}
     engines: {node: '>=16'}
+
+  '@sd-jwt/utils@0.7.1':
+    resolution: {integrity: sha512-Dx9QxhkBvHD7J52zir2+FNnXlPX55ON0Xc/VFKrBFxC1yHAU6/+pyLXRJMIQLampxqYlreIN9xo7gSipWcY1uQ==}
+    engines: {node: '>=18'}
 
   '@segment/loosely-validate-event@2.0.0':
     resolution: {integrity: sha512-ZMCSfztDBqwotkl848ODgVcAmN4OItEWDCkshcKz0/W6gGSQayuuCtWV/MlodFivAZD793d6UgANd6wCXUfrIw==}
@@ -2709,6 +2733,7 @@ packages:
 
   eslint-config-standard-with-typescript@39.1.0:
     resolution: {integrity: sha512-5+SPKis3yr6T1X6wSA7HhDuumTRMrTDMcsTrIWhdZuI+sX3e8SPGZYzuJxVxdc239Yo718dEVEVyJhHI6jUjrQ==}
+    deprecated: Please use eslint-config-love, instead.
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^6.4.0
       eslint: ^8.0.1
@@ -3189,6 +3214,7 @@ packages:
 
   glob@6.0.4:
     resolution: {integrity: sha512-MKZeRNyYZAVVVG1oZeLaWie1uweH40m9AZwIwxyPbTSX4hHrVYSzLg0Ro5Z5R7XKkIX+Cc6oD1rqeDJnwsB8/A==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
@@ -3199,6 +3225,7 @@ packages:
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-dirs@3.0.1:
     resolution: {integrity: sha512-NBcGGFbBA9s1VzD41QXDG+3++t9Mn5t1FpLdhESY6oKY4gYTFpX4wO3sqGUa0Srjtbfj3szX0RnemmrVRUdULA==}
@@ -4587,6 +4614,7 @@ packages:
 
   osenv@0.1.5:
     resolution: {integrity: sha512-0CWcCECdMVc2Rw3U5w9ZjqX6ga6ubk1xDVKxtBQPK7wis/0F2r9T6k4ydGYhecl7YUBxBVxhL5oisPsNxAPe2g==}
+    deprecated: This package is no longer supported.
 
   p-cancelable@3.0.0:
     resolution: {integrity: sha512-mlVgR3PGuzlo0MmTdk4cXqXWlwQDLnONTAg6sm62XkMJEiRxN3GL3SffkYvqwonbkJBcrI7Uvv5Zh9yjvn2iUw==}
@@ -5080,18 +5108,22 @@ packages:
 
   rimraf@2.2.8:
     resolution: {integrity: sha512-R5KMKHnPAQaZMqLOsyuyUmcIjSeDm+73eoqQpaXA7AZ22BL+6C+1mcUscgOsNd8WVlJuvlgAPsegcx7pjlV0Dg==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@2.4.5:
     resolution: {integrity: sha512-J5xnxTyqaiw06JjMftq7L9ouA448dw/E7dKghkP9WpKNuwmARNNg+Gk8/u5ryb9N/Yo2+z3MCwuqFK/+qPOPfQ==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@2.6.3:
     resolution: {integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@3.0.2:
@@ -6938,11 +6970,12 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@credo-ts/anoncreds@0.5.3(@hyperledger/anoncreds-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
+  '@credo-ts/anoncreds@0.5.5(@hyperledger/anoncreds-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
     dependencies:
       '@astronautlabs/jsonpath': 1.1.2
-      '@credo-ts/core': 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+      '@credo-ts/core': 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@hyperledger/anoncreds-shared': 0.2.2
+      '@sphereon/pex-models': 2.2.4
       big-integer: 1.6.51
       bn.js: 5.2.1
       class-transformer: 0.5.1
@@ -6956,9 +6989,9 @@ snapshots:
       - supports-color
       - web-streams-polyfill
 
-  '@credo-ts/askar@0.5.3(@hyperledger/aries-askar-shared@0.2.1)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
+  '@credo-ts/askar@0.5.5(@hyperledger/aries-askar-shared@0.2.1)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
     dependencies:
-      '@credo-ts/core': 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+      '@credo-ts/core': 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@hyperledger/aries-askar-shared': 0.2.1
       bn.js: 5.2.1
       class-transformer: 0.5.1
@@ -6973,16 +7006,18 @@ snapshots:
       - supports-color
       - web-streams-polyfill
 
-  '@credo-ts/core@0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
+  '@credo-ts/core@0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
     dependencies:
       '@digitalcredentials/jsonld': 6.0.0(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@digitalcredentials/jsonld-signatures': 9.4.0(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@digitalcredentials/vc': 6.0.1(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@multiformats/base-x': 4.0.1
-      '@sd-jwt/core': 0.6.1
-      '@sd-jwt/decode': 0.6.1
-      '@sd-jwt/types': 0.6.1
-      '@sd-jwt/utils': 0.6.1
+      '@sd-jwt/core': 0.7.1
+      '@sd-jwt/decode': 0.7.1
+      '@sd-jwt/jwt-status-list': 0.7.1
+      '@sd-jwt/sd-jwt-vc': 0.7.1
+      '@sd-jwt/types': 0.7.1
+      '@sd-jwt/utils': 0.7.1
       '@sphereon/pex': 3.3.3
       '@sphereon/pex-models': 2.2.4
       '@sphereon/ssi-types': 0.23.4
@@ -7016,10 +7051,10 @@ snapshots:
       - supports-color
       - web-streams-polyfill
 
-  '@credo-ts/indy-vdr@0.5.3(@hyperledger/anoncreds-shared@0.2.2)(@hyperledger/indy-vdr-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
+  '@credo-ts/indy-vdr@0.5.5(@hyperledger/anoncreds-shared@0.2.2)(@hyperledger/indy-vdr-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
     dependencies:
-      '@credo-ts/anoncreds': 0.5.3(@hyperledger/anoncreds-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
-      '@credo-ts/core': 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+      '@credo-ts/anoncreds': 0.5.5(@hyperledger/anoncreds-shared@0.2.2)(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+      '@credo-ts/core': 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       '@hyperledger/indy-vdr-shared': 0.2.2
     transitivePeerDependencies:
       - '@hyperledger/anoncreds-shared'
@@ -7030,16 +7065,16 @@ snapshots:
       - supports-color
       - web-streams-polyfill
 
-  '@credo-ts/push-notifications@0.7.0(@credo-ts/core@0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))':
+  '@credo-ts/push-notifications@0.7.0(@credo-ts/core@0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))':
     dependencies:
-      '@credo-ts/core': 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+      '@credo-ts/core': 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       class-transformer: 0.5.1
       class-validator: 0.14.1
       tsyringe: 4.8.0
 
-  '@credo-ts/question-answer@0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
+  '@credo-ts/question-answer@0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
     dependencies:
-      '@credo-ts/core': 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+      '@credo-ts/core': 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       class-transformer: 0.5.1
       class-validator: 0.14.1
       rxjs: 7.8.1
@@ -7051,17 +7086,17 @@ snapshots:
       - supports-color
       - web-streams-polyfill
 
-  '@credo-ts/react-hooks@0.6.0(@credo-ts/core@0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))(@credo-ts/question-answer@0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))(react@18.2.0)':
+  '@credo-ts/react-hooks@0.6.0(@credo-ts/core@0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))(@credo-ts/question-answer@0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1))(react@18.2.0)':
     dependencies:
-      '@credo-ts/core': 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
-      '@credo-ts/question-answer': 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+      '@credo-ts/core': 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+      '@credo-ts/question-answer': 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       react: 18.2.0
       rxjs: 7.8.1
 
-  '@credo-ts/react-native@0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native-fs@2.20.0(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0)))(react-native-get-random-values@1.9.0(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0)))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
+  '@credo-ts/react-native@0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native-fs@2.20.0(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0)))(react-native-get-random-values@1.9.0(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0)))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)':
     dependencies:
       '@azure/core-asynciterator-polyfill': 1.0.2
-      '@credo-ts/core': 0.5.3(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
+      '@credo-ts/core': 0.5.5(expo@49.0.13(@babel/core@7.23.0))(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))(web-streams-polyfill@3.2.1)
       events: 3.3.0
       react-native: 0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0)
       react-native-fs: 2.20.0(react-native@0.71.13(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(react@18.2.0))
@@ -8005,8 +8040,8 @@ snapshots:
       '@typescript-eslint/eslint-plugin': 6.7.3(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint@8.50.0)(typescript@5.2.2)
       '@typescript-eslint/parser': 6.7.3(eslint@8.50.0)(typescript@5.2.2)
       eslint: 8.50.0
-      eslint-config-standard-with-typescript: 39.1.0(@typescript-eslint/eslint-plugin@6.7.3(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0))(eslint-plugin-n@16.1.0(eslint@8.50.0))(eslint-plugin-promise@6.1.1(eslint@8.50.0))(eslint@8.50.0)(typescript@5.2.2)
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0)
+      eslint-config-standard-with-typescript: 39.1.0(@typescript-eslint/eslint-plugin@6.7.3(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0))(eslint-plugin-n@16.1.0(eslint@8.50.0))(eslint-plugin-promise@6.1.1(eslint@8.50.0))(eslint@8.50.0)(typescript@5.2.2)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0)
       eslint-plugin-n: 16.1.0(eslint@8.50.0)
       eslint-plugin-node: 11.1.0(eslint@8.50.0)
       eslint-plugin-promise: 6.1.1(eslint@8.50.0)
@@ -8202,17 +8237,28 @@ snapshots:
 
   '@react-native/polyfills@2.0.0': {}
 
-  '@sd-jwt/core@0.6.1':
+  '@sd-jwt/core@0.7.1':
     dependencies:
-      '@sd-jwt/decode': 0.6.1
-      '@sd-jwt/present': 0.6.1
-      '@sd-jwt/types': 0.6.1
-      '@sd-jwt/utils': 0.6.1
+      '@sd-jwt/decode': 0.7.1
+      '@sd-jwt/present': 0.7.1
+      '@sd-jwt/types': 0.7.1
+      '@sd-jwt/utils': 0.7.1
 
   '@sd-jwt/decode@0.6.1':
     dependencies:
       '@sd-jwt/types': 0.6.1
       '@sd-jwt/utils': 0.6.1
+
+  '@sd-jwt/decode@0.7.1':
+    dependencies:
+      '@sd-jwt/types': 0.7.1
+      '@sd-jwt/utils': 0.7.1
+
+  '@sd-jwt/jwt-status-list@0.7.1':
+    dependencies:
+      '@sd-jwt/types': 0.7.1
+      base64url: 3.0.1
+      pako: 2.1.0
 
   '@sd-jwt/present@0.6.1':
     dependencies:
@@ -8220,11 +8266,30 @@ snapshots:
       '@sd-jwt/types': 0.6.1
       '@sd-jwt/utils': 0.6.1
 
+  '@sd-jwt/present@0.7.1':
+    dependencies:
+      '@sd-jwt/decode': 0.7.1
+      '@sd-jwt/types': 0.7.1
+      '@sd-jwt/utils': 0.7.1
+
+  '@sd-jwt/sd-jwt-vc@0.7.1':
+    dependencies:
+      '@sd-jwt/core': 0.7.1
+      '@sd-jwt/jwt-status-list': 0.7.1
+      '@sd-jwt/utils': 0.7.1
+
   '@sd-jwt/types@0.6.1': {}
+
+  '@sd-jwt/types@0.7.1': {}
 
   '@sd-jwt/utils@0.6.1':
     dependencies:
       '@sd-jwt/types': 0.6.1
+      js-base64: 3.7.7
+
+  '@sd-jwt/utils@0.7.1':
+    dependencies:
+      '@sd-jwt/types': 0.7.1
       js-base64: 3.7.7
 
   '@segment/loosely-validate-event@2.0.0':
@@ -9715,23 +9780,23 @@ snapshots:
     dependencies:
       eslint: 8.50.0
 
-  eslint-config-standard-with-typescript@39.1.0(@typescript-eslint/eslint-plugin@6.7.3(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0))(eslint-plugin-n@16.1.0(eslint@8.50.0))(eslint-plugin-promise@6.1.1(eslint@8.50.0))(eslint@8.50.0)(typescript@5.2.2):
+  eslint-config-standard-with-typescript@39.1.0(@typescript-eslint/eslint-plugin@6.7.3(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0))(eslint-plugin-n@16.1.0(eslint@8.50.0))(eslint-plugin-promise@6.1.1(eslint@8.50.0))(eslint@8.50.0)(typescript@5.2.2):
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.7.3(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint@8.50.0)(typescript@5.2.2)
       '@typescript-eslint/parser': 6.7.3(eslint@8.50.0)(typescript@5.2.2)
       eslint: 8.50.0
-      eslint-config-standard: 17.1.0(eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0))(eslint-plugin-n@16.1.0(eslint@8.50.0))(eslint-plugin-promise@6.1.1(eslint@8.50.0))(eslint@8.50.0)
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0)
+      eslint-config-standard: 17.1.0(eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0))(eslint-plugin-n@16.1.0(eslint@8.50.0))(eslint-plugin-promise@6.1.1(eslint@8.50.0))(eslint@8.50.0)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0)
       eslint-plugin-n: 16.1.0(eslint@8.50.0)
       eslint-plugin-promise: 6.1.1(eslint@8.50.0)
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
 
-  eslint-config-standard@17.1.0(eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0))(eslint-plugin-n@16.1.0(eslint@8.50.0))(eslint-plugin-promise@6.1.1(eslint@8.50.0))(eslint@8.50.0):
+  eslint-config-standard@17.1.0(eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0))(eslint-plugin-n@16.1.0(eslint@8.50.0))(eslint-plugin-promise@6.1.1(eslint@8.50.0))(eslint@8.50.0):
     dependencies:
       eslint: 8.50.0
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0)
       eslint-plugin-n: 16.1.0(eslint@8.50.0)
       eslint-plugin-promise: 6.1.1(eslint@8.50.0)
 
@@ -9749,7 +9814,7 @@ snapshots:
       enhanced-resolve: 5.15.0
       eslint: 8.50.0
       eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0)
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0)
       fast-glob: 3.3.1
       get-tsconfig: 4.7.2
       is-core-module: 2.13.0
@@ -9783,7 +9848,7 @@ snapshots:
       eslint-utils: 2.1.0
       regexpp: 3.2.0
 
-  eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-plugin-import@2.28.1)(eslint@8.50.0))(eslint@8.50.0):
+  eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.3(eslint@8.50.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.50.0):
     dependencies:
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.3

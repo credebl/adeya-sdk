@@ -24,14 +24,14 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@credo-ts/anoncreds": "0.5.3",
-    "@credo-ts/askar": "0.5.3",
-    "@credo-ts/core": "0.5.3",
-    "@credo-ts/indy-vdr": "0.5.3",
+    "@credo-ts/anoncreds": "0.5.5",
+    "@credo-ts/askar": "0.5.5",
+    "@credo-ts/core": "0.5.5",
+    "@credo-ts/indy-vdr": "0.5.5",
     "@credo-ts/push-notifications": "0.7.0",
-    "@credo-ts/question-answer": "0.5.3",
+    "@credo-ts/question-answer": "0.5.5",
     "@credo-ts/react-hooks": "0.6.0",
-    "@credo-ts/react-native": "0.5.3"
+    "@credo-ts/react-native": "0.5.5"
   },
   "peerDependencies": {
     "@hyperledger/anoncreds-react-native": "0.2.2",
