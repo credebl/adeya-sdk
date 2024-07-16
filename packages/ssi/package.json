@@ -42,6 +42,6 @@
     "@types/node": "^18.18.8",
     "@types/react": "^18.0.24",
     "rimraf": "3.0.2",
-    "typescript": "~5.2.2"
+    "typescript": "~5.5.2"
   }
 }
