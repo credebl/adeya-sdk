@@ -36,6 +36,8 @@ import { AskarModule } from '@credo-ts/askar'
 import {
   LogLevel,
   ConsoleLogger,
+  BasicMessageEventTypes,
+  BasicMessageStateChangedEvent,
   BasicMessageRecord,
   ConnectionRecord,
   CredentialExchangeRecord,
@@ -133,7 +135,6 @@ export {
   LogLevel,
   ConsoleLogger,
   InitConfig,
-  BasicMessageRecord,
   ConnectionRecord,
   OutOfBandRecord,
   CredentialExchangeRecord,
@@ -230,3 +231,5 @@ export { AskarModule }
 export { PushNotificationsFcmModule }
 // Q&A
 export { QuestionAnswerRecord, QuestionAnswerEventTypes, QuestionAnswerStateChangedEvent, QuestionAnswerState }
+//Basic message
+export { BasicMessageEventTypes, BasicMessageStateChangedEvent, BasicMessageRecord }
