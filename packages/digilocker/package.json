@@ -16,6 +16,13 @@
   "files": [
     "build"
   ],
+  "dependencies": {
+    "react-native": "0.72.5",
+    "axios": "^1.6.0",
+    "crypto-js": "^4.2.0",
+    "xml2js": "^0.6.2",
+    "uuid": "^9.0.0"
+  },
   "scripts": {
     "check-types": "pnpm compile --noEmit",
     "build": "pnpm clean && pnpm compile",
@@ -26,6 +33,11 @@
   "devDependencies": {
     "@types/node": "^18.18.8",
     "rimraf": "3.0.2",
-    "typescript": "~5.5.2"
+    "typescript": "~5.5.2",
+    "@types/xml2js": "~0.4.14",
+    "@types/uuid": "^9.0.2"
+  },
+  "peerDependencies": {
+    "react-native": "0.72.5"
   }
 }

@@ -1,3 +1,2 @@
-export const test11 = () => {
-  return 'digilocker'
-}
+export * from './digilocker'
+export * from './digilockerDataParse'
