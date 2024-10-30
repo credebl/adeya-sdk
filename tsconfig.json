@@ -7,7 +7,7 @@
     "strict": true,
     "noEmitOnError": true,
     "lib": [],
-    "types": [],
+    "types": ["node"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
