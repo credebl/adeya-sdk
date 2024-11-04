@@ -29,7 +29,7 @@
     "@credo-ts/core": "0.5.7",
     "@credo-ts/indy-vdr": "0.5.7",
     "@credo-ts/push-notifications": "0.7.1",
-    "@credo-ts/question-answer": "0.5.7",
+    "@credo-ts/question-answer": "0.5.11",
     "@credo-ts/react-hooks": "0.6.1",
     "@credo-ts/react-native": "0.5.7"
   },
