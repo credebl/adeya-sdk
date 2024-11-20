@@ -109,6 +109,7 @@ import {
   IndyVdrPoolConfig,
   IndyVdrSovDidResolver
 } from '@credo-ts/indy-vdr'
+import { OpenId4VcHolderModule } from '@credo-ts/openid4vc'
 import { PushNotificationsFcmModule } from '@credo-ts/push-notifications'
 // Q&A
 import {
@@ -117,6 +118,7 @@ import {
   QuestionAnswerStateChangedEvent,
   QuestionAnswerState
 } from '@credo-ts/question-answer'
+import { recordsAddedByType, recordsRemovedByType } from '@credo-ts/react-hooks/build/recordUtils'
 
 export * from './agent'
 export * from './providers'
@@ -236,3 +238,5 @@ export { PushNotificationsFcmModule }
 export { QuestionAnswerRecord, QuestionAnswerEventTypes, QuestionAnswerStateChangedEvent, QuestionAnswerState }
 //Basic message
 export { BasicMessageEventTypes, BasicMessageStateChangedEvent, BasicMessageRecord }
+//openIDC4VCI
+export { OpenId4VcHolderModule, recordsAddedByType, recordsRemovedByType }
