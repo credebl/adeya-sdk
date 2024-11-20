@@ -94,7 +94,8 @@ import {
   DidDocument,
   KeyDidCreateOptions,
   PeerDidCreateOptions,
-  JwkDidCreateOptions
+  JwkDidCreateOptions,
+  SdJwtVcRecord
 } from '@credo-ts/core'
 import {
   GetCredentialsForRequestReturn,
@@ -120,6 +121,7 @@ import {
 export * from './agent'
 export * from './providers'
 export * from './hooks'
+export * from './openid'
 export * from './wallet'
 export * from './connections'
 export * from './credentials'
@@ -194,7 +196,8 @@ export {
   DidDocument,
   KeyDidCreateOptions,
   PeerDidCreateOptions,
-  JwkDidCreateOptions
+  JwkDidCreateOptions,
+  SdJwtVcRecord
 }
 // Anoncreds
 export {
