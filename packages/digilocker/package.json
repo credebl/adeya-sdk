@@ -17,7 +17,6 @@
     "build"
   ],
   "dependencies": {
-    "react-native": "0.72.5",
     "axios": "^1.6.0",
     "crypto-js": "^4.2.0",
     "xml2js": "^0.6.2",
@@ -38,6 +37,6 @@
     "@types/uuid": "^9.0.2"
   },
   "peerDependencies": {
-    "react-native": "0.72.5"
+    "react-native": "*"
   }
 }
