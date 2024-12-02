@@ -23,4 +23,17 @@
       </a>
     </td>
   </tr>
+  <tr>
+    <td><a href="https://github.com/credebl/adeya-sdk/tree/main/packages/digilocker">@adeya/digilocker</a></td>
+    <td>
+      <a href="https://www.npmjs.com/package/@adeya/digilocker">
+        <img alt="@adeya/digilocker version" src="https://img.shields.io/npm/v/@adeya/digilocker.svg"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.npmjs.com/package/@adeya/digilocker">
+        <img alt="@adeya/digilocker version" src="https://img.shields.io/npm/v/@adeya/digilocker/alpha.svg"/>
+      </a>
+    </td>
+  </tr>
 </table>
