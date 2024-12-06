@@ -1,13 +1,15 @@
-import type { Agent } from '@credo-ts/core'
+import type { CredentialMetadata } from './displayProof'
+import type { CredentialExchangeRecord, Agent } from '@credo-ts/core'
 
 import {
   ClaimFormat,
   SdJwtVcRecord,
   SdJwtVcRepository,
   W3cCredentialRecord,
-  W3cCredentialRepository,
-  type CredentialExchangeRecord
+  W3cCredentialRepository
 } from '@credo-ts/core'
+
+import { getOID4VCCredentialsForProofRequest } from './resolverProof'
 
 export type GenericCredentialExchangeRecord = CredentialExchangeRecord | W3cCredentialRecord | SdJwtVcRecord
 
@@ -171,6 +173,8 @@ export type W3cCredentialDisplay = {
   display: CredentialDisplay
   credential?: W3cCredentialJson
   attributes: W3cCredentialSubjectJson
+  metadata?: CredentialMetadata
+  claimFormat?: ClaimFormat
 }
 
 export const isW3CCredentialRecord = (record: W3cCredentialRecord) => {
@@ -254,5 +258,20 @@ export async function removeCredential(agent: Agent, cred: W3cCredentialRecord |
     await agent?.w3cCredentials.removeCredentialRecord(cred.id)
   } else if (cred instanceof SdJwtVcRecord) {
     await agent?.sdJwtVc.deleteById(cred.id)
+  }
+}
+
+export const resolveOpenIDPresentationRequest = async (uri: string, agent: Agent) => {
+  if (!agent) {
+    return
+  }
+  try {
+    const record = await getOID4VCCredentialsForProofRequest({
+      agent: agent,
+      uri: uri
+    })
+    return record
+  } catch (err: unknown) {
+    /* empty */
   }
 }

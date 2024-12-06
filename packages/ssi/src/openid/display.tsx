@@ -237,7 +237,11 @@ export function getCredentialForDisplaySdJwt(
   }
 }
 
-export function getCredentialForDisplay(credentialRecord: W3cCredentialRecord | SdJwtVcRecord): W3cCredentialDisplay {
+export function getCredentialForDisplay(
+  // TODO Will update when will give support to MdocRecord
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  credentialRecord: W3cCredentialRecord | SdJwtVcRecord | any
+): W3cCredentialDisplay {
   const openId4VcMetadata = getOpenId4VcCredentialMetadata(credentialRecord)
 
   if (credentialRecord instanceof SdJwtVcRecord) {
