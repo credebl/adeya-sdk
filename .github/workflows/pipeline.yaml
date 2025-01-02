@@ -27,6 +27,7 @@ on:
         type: choice
         options:
           - ssi
+          - digilocker
 
 jobs:
   continuous-integration:
