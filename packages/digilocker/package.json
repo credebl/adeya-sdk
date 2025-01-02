@@ -1,0 +1,42 @@
+{
+  "name": "@adeya/digilocker",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "main": "build/index",
+  "source": "src/index",
+  "homepage": "https://github.com/credebl/adeya-sdk/tree/main/packages/digilocker",
+  "repository": {
+    "url": "https://github.com/credebl/adeya-sdk/tree/main/packages/digilocker",
+    "type": "git",
+    "directory": "packages/digilocker"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "axios": "^1.6.0",
+    "crypto-js": "^4.2.0",
+    "xml2js": "^0.6.2",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "check-types": "pnpm compile --noEmit",
+    "build": "pnpm clean && pnpm compile",
+    "clean": "rimraf -rf ./build",
+    "compile": "tsc",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@types/node": "^18.18.8",
+    "rimraf": "3.0.2",
+    "typescript": "~5.5.2",
+    "@types/xml2js": "~0.4.14",
+    "@types/uuid": "^9.0.2"
+  },
+  "peerDependencies": {
+    "react-native": "*"
+  }
+}
